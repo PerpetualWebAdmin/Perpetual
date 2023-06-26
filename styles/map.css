@@ -61,3 +61,86 @@
     margin: 1rem;   
     width: 500px;
 }
+
+/* css for map  */
+.map-imgs-container > img{
+	cursor: pointer;
+}
+
+.map-modal.active{
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+}
+
+.map-modal > div.modal-close {
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.map-modal > div.modal-close > span {
+	display: block;
+	background-color: red;
+	width: 25px;
+	height: 5px;
+	transform: rotate(45deg);
+}
+
+.map-modal > div.modal-close > span:nth-child(2) {
+	transform: translateY(-5px) rotate(-45deg);
+}
+
+
+.map-modal {
+	display: none;
+
+}
+
+.map-modal > img {
+	height: 100%;
+	width: 80%;
+	object-fit: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.modal-zoom {
+	height: 30px;
+	width: 30px;
+	background-color: #01205e;
+	position: fixed;
+	bottom: 60px;
+	left: 20px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.modal-zoom > span{
+	background-color: white;
+	display: block;
+	height: 5px;
+	width: 20px;
+	position: fixed;
+	top: inherit;
+	left:inherit;
+transform: translate(5px,12px);
+}
+
+.modal-zoom.in > span:nth-child(2) {
+	transform: translate(5px,12px) rotate(90deg);
+}
+.modal-zoom.out {
+	bottom: 20px;
+}

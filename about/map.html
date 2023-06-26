@@ -137,8 +137,8 @@
     <main>
    
     <section class="uphsl-mainbuild-maps">
-        <h1 class="mainbuild">Main Building</h1>
-        <div class="main-building">
+    <h1 class="mainbuild">Main Building</h1>
+    <div class="main-building map-imgs-container">
             <img src="/img/map/overallmap.jpg" alt="UPHSL Site Map" class="uphsl-mainbuild">
             <img src="/img/map/mainbuild1.jpg" alt="UPHSL Site Map" class="uphsl-mainbuild">
             <img src="/img/map/mainbuild2.jpg" alt="UPHSL Site Map" class="uphsl-mainbuild">
@@ -150,7 +150,7 @@
 
     <section class="uphsl-medu-maps">
         <h1 class="mainbuild">Medical University</h1>
-        <div class="medical-university">
+        <div class="medical-university map-imgs-container">
             <img src="/img/map/mu1.jpg" alt="UPHSL Medical University" class="uphsl-medu">
             <img src="/img/map/mu2.jpg" alt="UPHSL Medical University" class="uphsl-medu">
             <img src="/img/map/mu3.jpg" alt="UPHSL Medical University" class="uphsl-medu">
@@ -160,7 +160,7 @@
     </div>
     </section>
 
-    <section class="uphsl-hospital-maps">
+    <section class="uphsl-hospital-maps map-imgs-container">
         <h1 class="mainbuild">Hospital Building</h1>
         <div class="hospital-building">
             <img src="/img/map/hos1.jpg" alt="UPHSL Hospital Building" class="uphsl-hospital">
@@ -168,7 +168,7 @@
     </div>
     </section>
 
-    <section class="basic-ed">
+    <section class="basic-ed map-imgs-container">
         <h1 class="mainbuild">Basic Education Building</h1>
         <div class="besd">
             <img src="/img/map/besd1.jpg" alt="UPHSL Hospital Building" class="uphsl-besd">
@@ -177,6 +177,23 @@
             <img src="/img/map/besd4.jpg" alt="UPHSL Hospital Building" class="uphsl-besd">
     </div>
     </section>
+
+    <div class="map-modal">
+        <div class="modal-close" onclick="closeModal()">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="modal-zoom in">
+        <span></span>
+        <span></span>
+        </div>
+        <div class="modal-zoom out">
+        <span></span>
+        </div>
+        <img src="Map/UPHSLMAP.jpg" alt="uphsl map">
+    </div>
+
     <!-- Start of Footer -->
     <footer>
         <div class="footer-top">
@@ -209,6 +226,7 @@
 
     </main>
     <script src="/script/navbar.js"></script>
+    <script src="/script/about-map.js"></script>
 </body>
 </html>
 
