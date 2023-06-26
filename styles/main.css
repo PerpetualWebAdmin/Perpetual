@@ -1,0 +1,766 @@
+:root{
+    --default-back:  #1c4da1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Start of Navigation Bar*/
+.perpslogo{
+    width: 60%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c4da1;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navlist{
+    list-style: none;
+}
+.navlist li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+.navbar label, .navbar a, .navbar i{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navbar ul li{
+    position: relative;
+    padding: 9px;
+}
+.navbar label:hover , .navbar a:hover{
+    color: #ffc63e;
+}
+.navbar input[type="checkbox"]:checked + label {
+    color: #ffc63e;
+}
+
+/* hide other menus - to fit the submenu */
+.nav-item.inactive{
+    display: none;
+}
+
+/*Start of Arrows*/
+.arrow{
+   transition: all 0.7s ease;
+}
+input[type="checkbox"]:checked ~ .arrow{
+    transform: rotate(180deg);
+ 
+}
+.navbar .navlist .nav-item .progsub:hover .bsed-arrow{
+    transform: rotate(90deg);
+}
+/*End of Arrows*/
+
+/*Start of Progress Sub*/
+.progsub{
+    display: none;
+}
+
+.progsub ul{
+    display: block;
+    margin: 5px;
+}
+.progsub ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+/*Start of Basic Education*/
+.progsub-bsed{
+    display: none;
+}
+
+
+/*End of Basic Education*/
+
+/*End of Progress Sub*/
+
+/*Start of About Sub*/
+.abtsub{
+    display: none;
+}
+
+ /*End of About Sub*/
+
+ /*Start of Online Services*/
+.olssub{
+    display: none;
+}
+ /*End of About Sub*/
+
+/*Start of Support Services Sub*/
+.supsersub{
+    display: none;
+}
+
+ /*End of Support Services Sub*/
+
+/*Start of Enroll Now*/
+.enrlnw{
+    padding: 12px;
+    background-color: #ffc63e;
+    border-radius: 7px;
+}
+.navenrl{
+    color: black;
+}
+.enrlnw:hover{
+    background-color: #fff;
+}
+/*End of Enroll Now*/
+
+/*Start of Hamburger Menu*/
+.navham{
+    display: none;
+    cursor: pointer;
+    padding-right: 1rem;
+ }
+ .bar{
+     display: block;
+     width: 33px;
+     height: 5px;
+     background-color: white;
+     margin: 4px 0;
+     border-radius: 2px;
+     -webkit-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+ }
+/*End of Hamburger Menu*/
+/*End of Navigation Bar*/
+
+/*Main Section*/
+
+/*Start of Home Section*/
+.Home{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.hm-vid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* min-height: 100vh; */
+    position: relative;
+    overflow: hidden;
+}
+.vid-intro{
+    object-fit: cover;
+    z-index: -1;
+    top:0;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+/*End of Home Section*/
+
+/*Start of News and Updates Section*/
+.Newups{
+    width: 100%;
+}
+/*Start of News and Update Title*/
+.newuph{
+    padding-top:20px;
+    text-align: center;
+    font-size: 50px;
+    color: #143980;
+}
+/*End of News and Update Title*/
+
+.newup-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    gap: 50px 1.5rem;
+    justify-content: center;
+}
+.newupimg{
+    width: 75%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+}
+.newupimg2{
+    width: 95%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.newupimg3{
+    width: 95%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.newupimg4{
+    width: 85%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+  
+}
+.newup-list{
+    list-style: none;
+}
+
+/*Start of Card List*/
+.newup-card{
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+   
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.newup-card-1{
+    width: 350px;
+    height: 520px;
+    margin: 20px;
+    padding: 1rem;
+ 
+    border-radius: 1rem;
+}
+.newuptitle{
+    padding: 1rem;
+    text-align: center;
+}
+.newup-contents{
+    padding-top: 1rem;
+    text-align: justify;
+    font-size: 15px;
+}
+.newuptitle-2{
+    padding: 1rem;
+    text-align: center;
+}
+.newup-contents-2{
+    padding-top: 1rem;
+    text-align: justify;
+    font-size: 15px;
+}
+.newuptitle-3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 15px;
+}
+.newup-contents-3{
+    padding-top: 0.2rem;
+    text-align: justify;
+    font-size: 15px;
+}
+.newuptitle-4{
+    text-align: center;
+    padding: 1rem;
+}
+.newup-contents-4{
+    padding-top: 0.2rem;
+    text-align: justify;
+    font-size: 15px;
+}
+.newup-readm{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.newup-readm a{
+    text-decoration: none;
+    color: black;
+}
+.newup-readm-btn{
+    padding:0.5rem;
+    border: 3px solid black;
+    border-radius: 3rem;
+}
+
+/*End of Card List*/
+
+/*End of News and Update Section*/
+
+/*Start of Campuses Section*/
+.Campuses{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+}
+.camp{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.camp-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 50px 1.5rem;
+    
+    padding-bottom: 1rem;
+    align-items: end;
+}
+/*Cards*/
+
+    /* Generalized card */
+    .camp-pic-container {
+        display: flex;
+        justify-content: center;
+    }
+    .camp-pic {
+        width: 300px;
+    }
+
+
+/*Start of Binan*/
+.camp-bin{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem; 
+    overflow: hidden;
+}
+.camp-lag-title{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.camp-lag-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+/*End of Binan*/
+/*Start of GMA*/
+.camp-gma{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.camp-gma-title{
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.camp-gma-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+/*End of GMA*/
+/*Start of Manila*/
+.camp-sampaloc{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.camp-sampaloc-title{
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.camp-sampaloc-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+/*End of Manila*/
+
+/*Start of Pangasinan*/
+.camp-pangasinan{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    
+}
+.camp-pangasinan-title{
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--default-back);
+}
+.camp-pangasinan-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--default-back);
+}
+/*End of Pangasinan*/
+
+/*Start of Isabela College*/
+.camp-isabela{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+
+}
+.camp-isabela-title{
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--default-back);
+}
+.camp-isabela-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--default-back);
+}
+/*End of Isabela*/
+
+/*Start of Roxas*/
+.camp-roxas{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.camp-roxas-title{
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.camp-roxas-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+/*End of Roxas*/
+
+/*Start of Medical College*/
+.camp-medical{
+    width: 300px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.camp-medical-title{
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.camp-medical-loc{
+    font-size: 15px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+/*End of Medical College*/
+
+/*End of Campuses Section*/
+
+/*Start of Footer Section*/
+
+.footer-top {
+    background-color: rgba(50, 81, 162, 1);
+    height: 100px;
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-top-ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 15px;
+}
+.footer-top-ul > li > a{
+    color: white;
+   
+    text-decoration: none;
+}
+.footer-top-ul > li{
+    list-style: none;
+}
+
+.footer-bottom {
+    background-color: white;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    width: 280px;
+}
+
+
+.footer-copyright {
+    color: #496EB3;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*End of Footer Section*/
+
+
+
+/*All Media Query*/
+
+@media(max-width: 768px){
+
+
+   /*News and Updates Section*/
+    .newupimg{
+        width: 70%;
+    }
+    .newup-card{
+        width: auto;
+        height: auto;
+        margin-left: 40px;
+    }
+    .newup-card-1{
+        width: auto;
+        height: 600px;
+        margin: 50px;
+        padding: 1rem;
+     
+        border-radius: 1rem;
+    }
+    /*News and Updates Section*/
+
+    /*Campuses Section*/
+    /*Images*/
+    .camp-bin, .camp-gma, .camp-sampaloc, .camp-pangasinan, .camp-isabela, .camp-medical{
+        width: 50%;
+     
+    }
+    /*End of Images*/
+    
+    /*Campuses Section*/
+    
+    /*Start of Footer Section*/
+
+    .footer-copyright{
+        padding-top: 2rem;
+        font-size: 12.5px;
+    }
+    .fa-facebook{
+        padding-left: 1.5rem;
+    }
+}
+
+@media(max-width: 1365px){
+    /*Start of Hamburger Menu*/
+    .navham{
+        display: block;
+        z-index: 2; 
+      }
+     .navham.active .bar:nth-child(2){
+        opacity: 0;
+      }
+     .navham.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+     .navham.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+      }
+      .navbar li{
+        display: block;
+        padding-left: 4rem;
+      }
+      .navlist{
+        opacity: 1;
+        position: fixed;
+        top: -100%;
+        background-color: #1c4da1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 0;
+      }
+      .nav-item{
+        margin: 16px 10px;
+      }
+      .navlist.active{
+        top:99px;
+      }
+
+      .navlogo{
+        z-index: 2;
+      }
+
+      .hitbox {
+        position: fixed;
+        width: 100vw;
+        height: 100px;
+        background-color: #1c4da1;
+        z-index: 1;
+      }
+    /*End of Hamburger Menu*/
+
+
+    
+    /* start of sub menus */
+    input[type="checkbox"]:checked ~ .progsub{
+        display: block;
+        background-color: #173d7f;
+        
+        }
+
+        .progsub ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            justify-content: stretch;
+            align-items: center;
+        }
+        .progsub ul li{
+            margin: 0;
+            border: 0;
+        }
+
+    .progsub ul li:hover .progsub-bsed{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 150px;
+        background-color:#1c4da1 ;
+    }
+
+    /* abtsub */
+    input[type="checkbox"]:checked ~ .abtsub{
+        display: block;
+        background-color:  #173d7f;
+     }
+     .abtsub ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        justify-content: stretch;
+     }
+     .abtsub ul li{
+        margin: 0;
+        border: 0;}
+
+    /* olssub */
+    input[type="checkbox"]:checked ~ .olssub{
+        display: block;
+        background-color:  #173d7f;
+     }
+     .olssub ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        justify-content: stretch;
+     }
+     .olssub ul li{
+        margin: 0;
+        border: 0;
+     }
+
+     /* supsersub */
+     input[type="checkbox"]:checked ~ .supsersub{
+        display: block;
+        background-color:  #173d7f;
+     }
+     .supsersub ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        justify-content: stretch;
+     }
+     .supsersub ul li{
+        margin: 0;
+        border: 0;
+     }
+
+    /* end of sub menus */
+
+}
+
+@media(min-width: 1366px) {
+
+    /* start of sub menus */
+
+    /* progsub */
+    input[type="checkbox"]:checked ~ .progsub{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #1c4da1;
+        
+     }
+
+    .progsub ul li:hover .progsub-bsed{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 150px;
+        background-color:#1c4da1 ;
+    }
+
+    /* abtsub */
+    input[type="checkbox"]:checked ~ .abtsub{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color:  #1c4da1;
+     }
+     .abtsub ul{
+         display: block;
+         margin: 8px;
+     }
+     .abtsub ul li{
+         width: 150px;
+         padding: 10px;
+         border-bottom: 1px solid white;
+     }
+
+    /* olssub */
+    input[type="checkbox"]:checked ~ .olssub{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color:  #1c4da1;
+     }
+     .olssub ul{
+         display: block;
+         margin: 8px;
+     }
+     .olssub ul li{
+         width: 150px;
+         padding: 10px;
+         border-bottom: 1px solid white;
+     }
+
+     /* supsersub */
+     input[type="checkbox"]:checked ~ .supsersub{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color:  #1c4da1;
+     }
+     .supsersub ul{
+         display: block;
+         margin: 8px;
+     }
+     .supsersub ul li{
+         width: 150px;
+         padding: 10px;
+         border-bottom: 1px solid white;
+     }
+
+    /* end of sub menus */
+}
