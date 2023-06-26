@@ -1,0 +1,63 @@
+.mainbuild{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+    color: black;
+}
+.uphsl-mainbuild-maps{
+    width: 100%;
+    height: auto;
+}
+.main-building{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.uphsl-mainbuild{
+    border: 1px solid black; 
+    margin: 1rem;   
+    width: 500px;
+}
+.medical-university{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.uphsl-medu{
+    border: 1px solid black; 
+    margin: 1rem;   
+    width: 500px;
+}
+
+.hospital-building{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.uphsl-hospital{
+    border: 1px solid black; 
+    margin: 1rem;   
+    width: 500px;
+}
+.besd{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.uphsl-besd{
+    border: 1px solid black; 
+    margin: 1rem;   
+    width: 500px;
+}
