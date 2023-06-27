@@ -117,6 +117,7 @@ img {
     justify-content: space-around;
     align-items:end;
     flex-wrap: wrap;
+    padding: 20px;
 }
 .bsit, .bscs{
     display: flex;
@@ -124,8 +125,9 @@ img {
     align-items: center;
     width: 450px;
 }
-.bsit-img, .bscs-img{
-    width: 500px;
+.program-img{
+    width: 80%;
+    max-width: 500px;
     height: 350px;
     object-fit: contain;
 }
@@ -249,6 +251,7 @@ img {
 
 .all-supports > div {
     width: 400px;
+    padding: 20px;
 }
 
 .all-supports-card {
