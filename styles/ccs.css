@@ -191,7 +191,6 @@ img {
 /*Start of BSCS*/
 .ccs-bscs {
     width: 100%;
-   
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -238,7 +237,7 @@ img {
 /*End of BSCS*/
 
 /*Start of All Supports*/
-/* mission and vision area */
+
 .all-supports {
     width: 100%;
     background-color: rgba(242, 242, 242, 1);
@@ -280,4 +279,33 @@ img {
     padding: 10px 75px 30px 75px;
     font-size: 20px;
 }
-/* end of mission and vision */
+/*End of All Supports*/
+
+/*Start of History*/
+.History{
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.ccs-history-cards > div{
+    width: 400px;
+    padding: 20px;
+}
+.ccs-history-cards {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 10%;
+}
+.ccs-history-card > p{
+    text-align: center;
+    padding: 10px 75px 30px 75px;
+    font-size: 15px;
+}
