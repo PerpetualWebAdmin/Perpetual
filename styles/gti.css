@@ -1,362 +1,64 @@
-:root{
-    --perma-color:  #1c4da1;
+.gti-title{
+    width: 30%;
+    margin-left: 2rem;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-/*Start of Navigation Bar*/
-.perpslogo{
-    width: 60%;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.main-title{
+    text-align: center;
+    border-radius: 1rem;
+    border: 1.5px solid #ffc63e;
     background-color: #1c4da1;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-.navlist{
-    list-style: none;
-}
-.navlist li{
-    display: inline-block;
-    padding: 10px;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-.navbar ul li{
-    position: relative;
-    padding: 9px;
-}
-.navbar a:hover{
+    font-size: 35px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: #ffc63e;
 }
-
-
-/*Start of Arrows*/
-.navbar .navlist .nav-item:hover .arrow{
-   transition: all 0.7s ease;
+body{
+    background-color: rgba(242, 242, 242, 1);
 }
-.navbar .navlist .nav-item:hover .prog-arrow,
-.navbar .navlist .nav-item:hover .ols-arrow,
-.navbar .navlist .nav-item:hover .supser-arrow,
-.navbar .navlist .nav-item:hover .abt-arrow{
-    transform: rotate(180deg);
- 
-}
-.navbar .navlist .nav-item .progsub:hover .bsed-arrow{
-    transform: rotate(90deg);
-}
-/*End of Arrows*/
-
-/*Start of Progress Sub*/
-.progsub{
-    display: none;
-}
-.navbar ul li:hover .progsub{
-   display: block;
-   position: absolute;
-   left: 0;
-   top: 100%;
-   background-color: #1c4da1;
-   
-}
-.progsub ul{
-    display: block;
-    margin: 5px;
-}
-.progsub ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px solid white;
-}
-
-/*Start of Basic Education*/
-.progsub-bsed{
-    display: none;
-}
-.progsub ul li:hover .progsub-bsed{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 150px;
-    background-color:#1c4da1 ;
-}
-/*End of Basic Education*/
-
-/*End of Progress Sub*/
-
-/*Start of About Sub*/
-.abtsub{
-    display: none;
-}
-.navbar ul li:hover .abtsub{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color:  #1c4da1;
- }
- .abtsub ul{
-     display: block;
-     margin: 8px;
- }
- .abtsub ul li{
-     width: 150px;
-     padding: 10px;
-     border-bottom: 1px solid white;
- }
- /*End of About Sub*/
-
- /*Start of Online Services*/
-.olssub{
-    display: none;
-}
-.navbar ul li:hover .olssub{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color:  #1c4da1;
- }
- .olssub ul{
-     display: block;
-     margin: 8px;
- }
- .olssub ul li{
-     width: 150px;
-     padding: 10px;
-     border-bottom: 1px solid white;
- }
- /*End of About Sub*/
-
-/*Start of Support Services Sub*/
-.supsersub{
-    display: none;
-}
-.navbar ul li:hover .supsersub{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color:  #1c4da1;
- }
- .supsersub ul{
-     display: block;
-     margin: 8px;
- }
- .supsersub ul li{
-     width: 150px;
-     padding: 10px;
-     border-bottom: 1px solid white;
- }
- /*End of Support Services Sub*/
-
-/*Start of Enroll Now*/
-.enrlnw{
-    padding: 12px;
-    background-color: #ffc63e;
-    border-radius: 7px;
-}
-.navenrl{
-    color: black;
-}
-.enrlnw:hover{
-    background-color: #fff;
-}
-/*End of Enroll Now*/
-
-/*Start of Hamburger Menu*/
-.navham{
-    display: none;
-    cursor: pointer;
-    padding-right: 1rem;
- }
- .bar{
-     display: block;
-     width: 33px;
-     height: 5px;
-     background-color: white;
-     margin: 4px 0;
-     border-radius: 2px;
-     -webkit-transition: all 0.3s ease;
-     transition: all 0.3s ease;
- }
-/*End of Hamburger Menu*/
-/*End of Navigation Bar*/
-
-/*Start of Main Section*/
-.gti-instruc{
+/*Start of School Automate Description Section*/
+.school-automate{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
 }
+.school-automate-desc{
+    border-radius: 1rem;
+    padding: 20px;
+    width: 650px;
+    background-color: white;
+}
+.school-automate-title{
+    color: #1c4da1;
+}
+.automate-list{
+    list-style: none;
+}
+/*End of School Automate Description Section*/
 
-.instruc{
-    padding-top:7rem;
-    text-align: center;
-}
-/*Start of Buttons Section*/
-.gti-btns{
+.school-automate-img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-.gti-list-btns{
-    list-style: none;
-    padding-top: 5rem;
-}
-.gti-list-btns li{
-    display: inline-block;
-}
-.gti-list-btns a{
-    padding-right: 1rem;
-    text-decoration: none;
-    color: white;
-}
-.gti-procol{
-    margin-right: 10rem;
-    background-color: var(--perma-color);
-    border-radius: 2rem;
-    padding: 10px;
-    border: 1px solid var(--perma-color);
-}
-.gti-proall{
-    margin-left: 5rem;
-    background-color: var(--perma-color);
-    border-radius: 2rem;
-    padding: 10px;
-    border: 1px solid var(--perma-color);
-}
-/*Start of Instruction Section*/
-.gti-college{
-    height: 400px;
-}
-.gti-allied{
-    height: 400px;
-    margin: 3rem;
-}
-/*End of Instruction Section*/
-
-/*Start of Moodle Section*/
-.moodle{
-    width: 100%;
-    height: 100vh;
-}
-.moodle-instruc{
-    text-align: center;
-}
-.moodle-pic{
-    display: grid;
-    place-items: center;
-}
-.moodlepiic{
-    margin-top: 1.5rem;
-    height: 450px;
-}
-.moodle-btn{
-    display: grid;
-    place-items: center;
-}
-.moodle-prim{
-    text-decoration: none;
-    color: white;
-    margin-top: 3rem;
-    background-color: var(--perma-color);
-    border-radius: 2rem;
-    padding: 10px;
-    border: 1px solid var(--perma-color);
-}
-/*End of Moodle Section*/
-
-/*Start of Google Account*/
-.googleacc{
-    width: 100%;
-    height: 100vh;
-}
-.google-title{
-    text-align: center;
-}
-.google-pic{
-    display: grid;
-    place-items: center;
-}
-.googlepic{
-    margin-top: 1.5rem;
-    height: 450px;
-}
-.google-actions{
-    display: grid;
-    place-items: center;
-}
-.google-btn{
-    text-decoration: none;
-    color: white;
-    margin-top: 2rem;
-    background-color: var(--perma-color);
-    border-radius: 2rem;
-    padding: 10px;
-    border: 1px solid var(--perma-color);
-}
-/*End of Google Account*/
-/*End of Main Section*/
-
-
-@media(max-width: 720px){
-        /*Start of Hamburger Menu*/
-        .navham{
-            display: block; 
-          }
-         .navham.active .bar:nth-child(2){
-            opacity: 0;
-          }
-         .navham.active .bar:nth-child(1){
-            transform: translateY(8px) rotate(45deg);
-          }
-         .navham.active .bar:nth-child(3){
-            transform: translateY(-10px) rotate(-45deg);
-          }
-          .navbar li{
-            display: block;
-            padding-left: 4rem;
-          }
-          .navlist{
-            opacity: 1;
-            position: fixed;
-            left: -100%;
-            top: 90px;
-            background-color: #1c4da1;
-            width: 100%;
-            text-align: center;
-            transition: 0.3s;
-          }
-          .nav-item{
-            margin: 16px 10px;
-          }
-          .navlist.active{
-            left:0;
-          }
-        /*End of Hamburger Menu*/
+    flex-wrap: wrap;
     
-        /*Start of Instruction*/
-         
-         /*End of Instruction*/
+    width: 100%;
+    margin-top: 1rem;
+}
+.gti-first-login, .gti-create-login{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+.sa-buttons{
+    background-color: #1c4da1;
+    padding: 10px;
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.images{
+    width: 500px;
 }
