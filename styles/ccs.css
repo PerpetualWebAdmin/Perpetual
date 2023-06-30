@@ -117,22 +117,20 @@ img {
     justify-content: space-around;
     align-items:end;
     flex-wrap: wrap;
-    padding: 20px;
 }
-.program{
+.bsit, .bscs{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 450px;
 }
-.program-img{
-    width: 80%;
-    max-width: 500px;
+.bsit-img, .bscs-img{
+    width: 500px;
     height: 350px;
     object-fit: contain;
 }
 
-.program-title{
+.bsit-title, .bscs-title{
     text-align: center;
     font-size: 16px;
 }
@@ -284,7 +282,7 @@ img {
 /*Start of History*/
 .History{
     width: 100%;
-    background-color: white;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -295,7 +293,7 @@ img {
     width: 400px;
     padding: 20px;
 }
-.ccs-history-card {
+.ccs-history-cards {
     text-align: center;
     font-family: Arial, sans-serif;
     font-weight: 400;
