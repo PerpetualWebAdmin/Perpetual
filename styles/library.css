@@ -1,0 +1,44 @@
+.flex-row {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+section > div {
+ width: 100%;
+ height: 100vh;
+ /* border: 1px black solid; */
+}
+
+section > div:nth-child(odd) {
+ background-color: green;
+}
+
+.center-jabol {
+ position: relative;
+}
+.center-jabol::before , .center-jabol::after {
+ content: '';
+ width: 1px;
+ height: 80vh;
+ display: block;
+ background-color: black;
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.center-jabol::after {
+ right: 0;
+}
+
+@media only screen and (min-width:480px) {
+ section {
+  flex-wrap: nowrap;
+ }
+ section > div {
+  width: 33%;
+ }
+
+ 
+}
