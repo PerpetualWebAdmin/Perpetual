@@ -39,6 +39,7 @@ const closeDrag = e => {
 	document.onmouseup = null;
 }
 
+//Modal Section
 const openModal = (e) => {
 	Modal.classList.add('active')
 	document.querySelector('.map-modal > img').src = e.target.src;
@@ -56,6 +57,8 @@ const closeModal = (e) => {
 	zoomLevel = 0
 }
 
+
+//Zoom Section
 document.querySelector('.modal-zoom.in').addEventListener('click', e => {
 	if(zoomLevel < 4)
 	zoomLevel++;
