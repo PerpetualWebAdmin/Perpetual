@@ -66,4 +66,9 @@ body{
 .images{
     width: 400px;
 }
-
+/*End of School Automate Images*/
+@media(max-width: 720px){
+    .school-automate-desc{
+        width: 90%;
+    }
+}
