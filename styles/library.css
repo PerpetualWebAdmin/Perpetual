@@ -1,40 +1,70 @@
-.flex-row {
+.flex-row, .flex-col {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
+ align-content: center;
+ align-items: center;
+}
+
+.flex-col {
+ flex-direction: column;
+ flex-wrap: nowrap;
+}
+
+section {
+ padding: 16px;
 }
 
 section > div {
  width: 100%;
+ min-width: 333px;
+ min-height: 600px;
  height: 100vh;
- /* border: 1px black solid; */
+ border: black 1px solid;
+ padding: 10px;
+ overflow: hidden;
 }
 
-section > div:nth-child(odd) {
- background-color: green;
-}
-
-.center-jabol {
+.center-div {
  position: relative;
 }
-.center-jabol::before , .center-jabol::after {
- content: '';
- width: 1px;
- height: 80vh;
- display: block;
- background-color: black;
- position: absolute;
- top: 50%;
- transform: translateY(-50%);
+
+.center-div::after {
+ right: 0;
 }
 
-.center-jabol::after {
- right: 0;
+header {
+ color: #FFC63E;
+ background-color: rgb(22, 56, 128);
+ width: fit-content;
+ padding: 16px;
+ font-size: 32px;
+ font-weight: 700;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+section img {
+ object-fit: contain;
+ width: 100%;
+ display: block;
+}
+
+.library-logo {
+ width: 200px;
+}
+
+section li {
+ margin-left: 20px;
+}
+
+.text-center {
+ text-align: center;
 }
 
 @media only screen and (min-width:480px) {
  section {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap !important; */
  }
  section > div {
   width: 33%;
