@@ -63,9 +63,7 @@ section li {
 }
 
 @media only screen and (min-width:480px) {
- section {
-  /* flex-wrap: nowrap !important; */
- }
+ 
  section > div {
   width: 33%;
  }
