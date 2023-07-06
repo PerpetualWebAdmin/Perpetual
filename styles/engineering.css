@@ -223,6 +223,7 @@ img {
     padding: 30px 0 20px 0;
 }
 .card-header-wrapper li{
+    padding: 0.5rem;
     text-align: justify;
 }
 .card-header-wrapper > h2{
