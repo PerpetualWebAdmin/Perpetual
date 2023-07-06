@@ -139,6 +139,8 @@ img {
 .program-title{
     text-align: center;
     font-size: 16px;
+   
+    text-decoration: none;
 }
 /*End of Computer Programs*/
 

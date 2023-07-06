@@ -346,11 +346,13 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-lag-title{
     text-align: center;
     padding-top: 0.5rem;
+    color: var(--default-back);
 }
 .camp-lag-loc{
     font-size: 15px;
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 /*End of Binan*/
 /*Start of GMA*/
@@ -362,13 +364,16 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-gma-title{
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 .camp-gma-loc{
     font-size: 15px;
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 /*End of GMA*/
+
 /*Start of Manila*/
 .camp-sampaloc{
     width: 300px;
@@ -378,11 +383,13 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-sampaloc-title{
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 .camp-sampaloc-loc{
     font-size: 15px;
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 /*End of Manila*/
 
@@ -435,11 +442,13 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-roxas-title{
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 .camp-roxas-loc{
     font-size: 15px;
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 /*End of Roxas*/
 
@@ -452,11 +461,13 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-medical-title{
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 .camp-medical-loc{
     font-size: 15px;
     padding-top: 0.5rem;
     text-align: center;
+    color: var(--default-back);
 }
 /*End of Medical College*/
 
