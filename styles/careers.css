@@ -1,0 +1,111 @@
+.flex-row, .flex-col {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+}
+
+.flex-col {
+ flex-direction: column;
+ flex-wrap: nowrap;
+}
+
+main > h2 {
+ color: #FFC63E;
+ background-color: rgb(22, 56, 128);
+ width: fit-content;
+ padding: 16px;
+ font-size: 32px;
+ font-weight: 700;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 24px;
+ border-radius: 8px;
+}
+
+main h3 {
+ color: rgb(22, 56, 128);
+ margin-left: 24px;
+ font-size: 24px;
+ font-weight: 700;
+}
+
+.top-header {
+ font-size: 32px !important;
+}
+
+.sub-header {
+ position: absolute;
+ top: -32px;
+ left: 0;
+}
+
+.imgs-container {
+ position: relative;
+ width: 90%;
+ min-width: 300px;
+ background-color: rgba(242, 242, 242, 1);
+ padding: 16px;
+ margin-top: 64px;
+ margin-bottom: 80px;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ justify-content: center;
+ gap: 24px;
+ flex-wrap: wrap;
+}
+
+.imgs-container > img {
+ min-width: 250px;
+ max-width: 300px;
+ height: 430px;
+ object-fit: cover;
+ align-self: stretch;
+}
+
+.modal.active {
+ opacity: 1;
+ pointer-events: all;
+}
+
+.modal.hidden {
+ opacity: 0;
+ pointer-events: none;
+}
+
+.modal {
+ transition: all .5s ease;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ z-index: 1;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.modal-back {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal > img {
+ transition: all .5s ease;
+ min-width: 300px;
+ max-height: 100%;
+ z-index: 2;
+ transform: translateY(100px);
+}
+
+.modal.active > img {
+ transform: translateY(0);
+}
