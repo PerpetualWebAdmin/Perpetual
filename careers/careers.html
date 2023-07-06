@@ -151,7 +151,9 @@
        
        <div class="modal hidden">
         <div class="modal-back" onclick="closeModal()" ></div>
-       <img src="careers-imgs/img1.png" alt="">
+        <img src="careers-imgs/img1.png" alt="">
+
+        <h3>Learn More</h1>
 
        <script>
         const modal = document.querySelector('.modal')
@@ -169,8 +171,8 @@
          n.addEventListener('click', e => {
 
           modalImage.src = e.target.src
-          modal.classList.add('active')
           modal.classList.remove('hidden')
+          modal.classList.add('active')
          })
         })
        </script>

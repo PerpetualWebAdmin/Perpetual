@@ -62,7 +62,9 @@ main h3 {
  max-width: 300px;
  height: 430px;
  object-fit: cover;
+ object-position: 50% 0;
  align-self: stretch;
+ cursor: pointer;
 }
 
 .modal.active {
@@ -76,7 +78,7 @@ main h3 {
 }
 
 .modal {
- transition: all .5s ease;
+ transition: all .3s ease;
  position: fixed;
  top: 0;
  left: 0;
@@ -99,7 +101,8 @@ main h3 {
 }
 
 .modal > img {
- transition: all .5s ease;
+ transition: all .3s ease;
+ display: block;
  min-width: 300px;
  max-height: 100%;
  z-index: 2;
@@ -108,4 +111,18 @@ main h3 {
 
 .modal.active > img {
  transform: translateY(0);
+}
+
+.modal > h3 {
+ position: absolute;
+ z-index: 3;
+ background-color: white;
+ padding: 16px;
+ bottom: 10px;
+ opacity: .5;
+ cursor: pointer;
+}
+
+.modal > h3:hover {
+ opacity: 1;
 }
