@@ -47,7 +47,6 @@ const openModal = (e) => {
 }
 
 document.querySelectorAll('.map-imgs-container > img').forEach(n => {
-	console.log(n.src)
 	n.addEventListener('click', openModal)
 })
 
