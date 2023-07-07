@@ -62,6 +62,7 @@ document.querySelector('.modal-zoom.in').addEventListener('click', e => {
 	if(zoomLevel < 4)
 	zoomLevel++;
 	adjustZoom(zoomLevel)
+	
 })
 document.querySelector('.modal-zoom.out').addEventListener('click', e => {
 	if(zoomLevel > 0)
