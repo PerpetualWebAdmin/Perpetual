@@ -232,6 +232,10 @@ img {
     font-family: 'Arial Regular', 'Arial', sans-serif;
     padding-bottom: 2rem;
 }
+span{
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .ccs-bsit-studout > p {
     padding: 10px 75px 30px 75px;
@@ -250,7 +254,11 @@ img {
     flex-wrap: wrap;
     align-items: stretch;
 }
-
+ h1{
+    background-color: rgba(242, 242, 242, 1);
+    padding: 1rem;
+    text-align: center;
+}
 .all-supports > div {
     width: 400px;
     padding: 20px;
@@ -312,4 +320,7 @@ img {
     text-align: center;
     padding: 10px 75px 30px 75px;
     font-size: 15px;
+}
+.career-opportunity{
+    color: #1c4da1;
 }

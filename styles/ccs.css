@@ -7,6 +7,23 @@ img {
     /* move banner down to avoid getting overlapped by the header */
     padding-top: 100px;
 }
+.mini-nav > ul{
+    border: 1px solid black;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 0.25rem;
+}
+.mini-nav > ul >  li {
+    list-style: none;
+}
+.mini-nav > ul >  li > a{
+    text-decoration: none;
+    color: black;
+}
+
 
 /* flex container for overview for programs */
 .program-overview {

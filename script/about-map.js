@@ -47,7 +47,6 @@ const openModal = (e) => {
 }
 
 document.querySelectorAll('.map-imgs-container > img').forEach(n => {
-	console.log(n.src)
 	n.addEventListener('click', openModal)
 })
 
@@ -63,6 +62,7 @@ document.querySelector('.modal-zoom.in').addEventListener('click', e => {
 	if(zoomLevel < 4)
 	zoomLevel++;
 	adjustZoom(zoomLevel)
+	
 })
 document.querySelector('.modal-zoom.out').addEventListener('click', e => {
 	if(zoomLevel > 0)
