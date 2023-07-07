@@ -1,0 +1,329 @@
+/* set all image width to full device width */
+img {
+ width: 100%;
+}
+
+.banner {
+ /* move banner down to avoid getting overlapped by the header */
+ padding-top: 100px;
+}
+
+/* flex container for overview for programs */
+.program-overview {
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.program-overview > div {
+ flex: 1 1 0;
+ min-width: 300px;
+ margin: 1vw;
+}
+
+.text-overview{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.overview-header-wrapper {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+
+.overview-header-wrapper > h1 {
+ width: 100%;
+ color: white;
+ background-color: rgba(29, 81, 157, 1);
+ text-align: center;
+ font-size: 4vw;
+ padding: 20px 10px;
+}
+
+.text-overview > p{
+ padding-top: 2vw;
+ font-size: 16px;
+ 
+}
+
+.learn-more-container {
+ display: flex;
+ justify-content: center;
+ margin-top: 3vw;
+}
+
+.learn-more-container > a {
+ text-align: center;
+ color: #0400D7;
+ font-size: 16px;
+}
+
+.program-logo-container {
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.program-logo-container > img {
+ max-width: 100%;
+ width: 250px;
+ object-fit: contain
+}
+/* end of overview */
+
+/* mission and vision area */
+.mission-vision {
+ width: 100%;
+ background-color: rgba(242, 242, 242, 1);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: stretch;
+}
+
+.mission-vision > div {
+ width: 450px;
+}
+
+.mission-vision-card {
+ text-align: center;
+ font-family: Arial, sans-serif;
+ font-weight: 400;
+ color: black;
+ background-color: white;
+ margin: 25px 10px;
+ border-radius: 10%;
+}
+
+.card-header-wrapper {
+ padding: 30px 0 20px 0;
+}
+
+.mission-vision-card > p {
+ padding: 10px 75px 30px 75px;
+ font-size: 20px;
+}
+/* end of mission and vision */
+
+/*Start of Computer Programs*/
+.ccs-programs{
+ display: flex;
+ justify-content: space-around;
+ align-items:end;
+ flex-wrap: wrap;
+ padding: 20px;
+}
+.program{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ min-width: 450px;
+ width: 45%;
+}
+.program-img{
+ width: 80%;
+ max-width: 800px;
+ height: 350px;
+ object-fit: contain;
+}
+
+.program-title{
+ text-align: center;
+ font-size: 16px;
+
+ text-decoration: none;
+}
+/*End of Computer Programs*/
+
+/*Start of BSIT */
+.ccs-bsit {
+ width: 100%;
+ background-color: rgba(242, 242, 242, 1);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: stretch;
+}
+
+.ccs-bsit > div {
+ width: 450px;
+}
+
+.ccs-bsit-card {
+ text-align: justify;
+ font-family: Arial, sans-serif;
+ font-weight: 400;
+ color: black;
+ background-color: white;
+ margin: 25px 10px;
+ border-radius: 9%;
+ padding:1rem;
+}
+
+.ccs-bsit-card h2 {
+ 
+ text-align: center;
+}
+
+.card-header-wrapper {
+ padding: 30px 0 20px 0;
+}
+.card-header-wrapper li{
+ text-align: justify;
+}
+.card-header-wrapper > h2{
+ font-size: 36px;
+ font-weight: 700;
+ font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.ccs-bsit-studout > p {
+ padding: 10px 75px 30px 75px;
+ font-size: 20px;
+}
+/* End of BSIT */
+
+/*Start of BSCS*/
+.ccs-bscs {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: stretch;
+}
+
+.ccs-bscs > div {
+ width: 450px;
+}
+
+.ccs-bscs-card {
+ text-align: justify;
+ font-family: Arial, sans-serif;
+ font-weight: 400;
+ color: black;
+ background-color: rgba(242, 242, 242, 1);
+ margin: 25px 10px;
+ border-radius: 9%;
+ padding:1rem;
+}
+
+.ccs-bscs-card h2 {
+ text-align: center;
+}
+
+.card-header-wrapper {
+ padding: 30px 0 20px 0;
+}
+.card-header-wrapper li{
+ text-align: justify;
+}
+
+.ccs-bsit-studout > p {
+ padding: 10px 75px 30px 75px;
+ font-size: 20px;
+}
+/*End of BSCS*/
+
+/*Start of All Supports*/
+
+.all-supports {
+ width: 100%;
+ background-color: rgba(242, 242, 242, 1);
+display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: stretch;
+}
+
+.all-supports > div {
+ width: 400px;
+ padding: 20px;
+}
+
+.all-supports-card {
+ text-align: justify;
+ font-family: Arial, sans-serif;
+ font-weight: 400;
+ color: black;
+ background-color: white;
+ margin: 10px 10px;
+ border-radius: 10%;
+}
+
+.card-header-wrapper {
+ padding: 30px 0 20px 0;
+}
+
+.all-supports > li {
+ text-align: justify;
+ padding: 10px 75px 30px 75px;
+ font-size: 20px;
+}
+/*End of All Supports*/
+
+/*Start of History*/
+.History{
+ width: 100%;
+ background-color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ align-items: stretch;
+}
+.ccs-history-cards > div{
+
+ width: 400px;
+ padding: 20px;
+}
+.ccs-history-card {
+ text-align: center;
+ font-family: Arial, sans-serif;
+ font-weight: 400;
+ color: black;
+ background-color: rgba(242, 242, 242, 1);
+ margin: 10px 10px;
+ border-radius: 64px;
+}
+.ccs-history-card > p{
+ text-align: center;
+ padding: 10px 75px 30px 75px;
+ font-size: 15px;
+}
+
+#Facilities {
+ margin-top: 24px;
+}
+
+.facility-imgs-containter {
+ width: 80%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-left: auto;
+ margin-right: auto;
+ gap: 16px;
+ background-color: rgba(242, 242, 242, 1);
+ padding: 16px;
+ border-radius: 64px;
+ padding-bottom: 64px;
+}
+
+.facility-imgs-containter > .imgs {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 16px;
+ justify-content: center;
+}
+
+.facility-imgs-containter img {
+ min-width: 300px;
+ max-width: 450px;
+ object-fit: contain;
+}
