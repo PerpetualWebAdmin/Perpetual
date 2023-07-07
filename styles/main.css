@@ -645,14 +645,6 @@ input[type="checkbox"]:checked ~ .arrow{
             border: 0;
         }
 
-    .progsub ul li:hover .progsub-bsed{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 150px;
-        background-color:#1c4da1 ;
-    }
-
     /* abtsub */
     input[type="checkbox"]:checked ~ .abtsub{
         display: block;
@@ -721,8 +713,8 @@ input[type="checkbox"]:checked ~ .arrow{
     .progsub ul li:hover .progsub-bsed{
         display: block;
         position: absolute;
-        top: 0;
-        left: 150px;
+        top: -5px;
+        left: 170px;
         background-color:#1c4da1 ;
     }
 

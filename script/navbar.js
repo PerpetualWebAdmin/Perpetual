@@ -17,10 +17,15 @@ navham.addEventListener("click", () => {
     })
   })
 
-  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  document.querySelectorAll(".nav-link").forEach(n => {
+    if(n.classList.contains('noHide'))
+      return;
+    n.addEventListener("click", () => {
     navham.classList.remove("active");
     navlist.classList.remove("active");
-  }))
+  })
+
+  })
 
 //SubMenus
 console.log('start of submenu');

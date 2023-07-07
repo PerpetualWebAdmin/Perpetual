@@ -132,12 +132,13 @@
         
         <section class="imgs-container">
          <h3 class="sub-header">Faculty</h3>
-         <img src="careers-imgs/img1.png" alt="">
+         <img src="careers-imgs/img1.png" alt="https://ph.indeed.com/jobs?q=perpetual+help&l=Biñan+City&radius=0&vjk=4f9614109207e5ff&fbclid=IwAR2KpTU1QZ1TK4fvM23VKovK-CfKVhGegdNWS532J2yuxKv81kmun8wJds8">
          <img src="careers-imgs/img1.png" alt="">
          <img src="careers-imgs/img1.png" alt="">
          <img src="../img/ccs/It.png" alt="">
          <img src="../img/environment/img4.png" alt="">
          <img src="../img/Shesh.png" alt="">
+         <img src="../img/Shesh.png" alt="https://fb.com">
        </section>
        
        <section class="imgs-container">
@@ -153,11 +154,12 @@
         <div class="modal-back" onclick="closeModal()" ></div>
         <img src="careers-imgs/img1.png" alt="">
 
-        <h3>Learn More</h1>
+        <h3><a href="">Learn More</a></h1>
 
        <script>
         const modal = document.querySelector('.modal')
         const modalImage = document.querySelector('.modal > img')
+        const learnMore = document.querySelector('.modal a')
         function closeModal() {
          modal.classList.remove('active')
          modal.classList.add('hidden')
@@ -171,6 +173,7 @@
          n.addEventListener('click', e => {
 
           modalImage.src = e.target.src
+          learnMore.href = e.target.alt
           modal.classList.remove('hidden')
           modal.classList.add('active')
          })

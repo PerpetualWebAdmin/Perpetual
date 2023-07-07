@@ -123,6 +123,10 @@ main h3 {
  cursor: pointer;
 }
 
+.modal a {
+ text-decoration: none;
+}
+
 .modal > h3:hover {
  opacity: 1;
 }
