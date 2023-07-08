@@ -89,7 +89,7 @@
 
 .map-modal > div.modal-close > span {
 	display: block;
-	background-color: red;
+	background-color: black;
 	width: 25px;
 	height: 5px;
 	transform: rotate(45deg);
