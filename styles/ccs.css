@@ -13,19 +13,24 @@ img {
 }
 
 .mini-nav > ul{
-    border-bottom: 1px solid black;
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     flex-direction: row;
     width: fit-content;
-    padding: 0.25rem;
+    padding: 8px;
 }
 .mini-nav > ul >  li {
     list-style: none;
 }
 .mini-nav > ul >  li > a{
     text-decoration: none;
-    color: black;
+    color: var(--default-back);
+    font-size: 12px;
+    
+    border: 1px black solid;
+    padding: 12px;
+    display: block;
+    border-radius: 16px;
 }
 
 
