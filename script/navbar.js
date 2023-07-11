@@ -41,6 +41,10 @@ addEventListener("resize", (event) => {
   checkboxes.forEach(n => {
     n.checked = false
   })
+
+  document.querySelectorAll('.progsub *').forEach(n => {
+    n.removeAttribute('style')
+  })
 })
 
 checkboxes.forEach(n => n.addEventListener('change', (event) => {
@@ -69,4 +73,27 @@ checkboxes.forEach(n => n.addEventListener('change', (event) => {
   }
 
 }))
+
+
+  const nonBasicEd = document.querySelectorAll('.progsub > ul > li:not(.noHide)')
+  const basicEd = document.querySelector('.progsub .noHide')
+  const basicEdArrow = basicEd.querySelector(':scope i')
+  const progsubGrid = document.querySelector('.progsub > ul')
+  const basicEd_sub = document.querySelector('.progsub-bsed')
+
+  basicEd.addEventListener('click' , e => {
+    if(!mediaWidth.matches) return;
+    basicEdArrow.style.transform = 'rotate(180deg)'
+    nonBasicEd.forEach(n => {
+      n.style.display = (n.style.display == 'none')? null:'none'
+    })
+
+    progsubGrid.style.gridTemplateColumns = (progsubGrid.style.gridTemplateColumns == '')?'1fr':null;
+
+    basicEd_sub.style.display = (basicEd_sub.style.display == '')? 'block':'';
+
+    basicEd.style.width = (basicEd.style.width == '')? '100%': '';
+
+    
+  })
 

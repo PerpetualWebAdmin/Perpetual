@@ -7,21 +7,30 @@ img {
     /* move banner down to avoid getting overlapped by the header */
     padding-top: 100px;
 }
+
+.mini-nav {
+    padding-left: 16px;
+}
+
 .mini-nav > ul{
-    border: 1px solid black;
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     flex-direction: row;
     width: fit-content;
-    border-radius: 1rem;
-    padding: 0.25rem;
+    padding: 8px;
 }
 .mini-nav > ul >  li {
     list-style: none;
 }
 .mini-nav > ul >  li > a{
     text-decoration: none;
-    color: black;
+    color: var(--default-back);
+    font-size: 12px;
+    
+    border: 1px black solid;
+    padding: 12px;
+    display: block;
+    border-radius: 16px;
 }
 
 

@@ -79,9 +79,6 @@ input[type="checkbox"]:checked ~ .arrow{
     transform: rotate(180deg);
  
 }
-.navbar .navlist .nav-item .progsub:hover .bsed-arrow{
-    transform: rotate(90deg);
-}
 /*End of Arrows*/
 
 /*Start of Progress Sub*/
@@ -633,7 +630,7 @@ input[type="checkbox"]:checked ~ .arrow{
         
         }
 
-        .progsub ul {
+        .progsub > ul {
             display: grid;
             grid-template-columns: 50% 50%;
             justify-items: center;
@@ -643,6 +640,10 @@ input[type="checkbox"]:checked ~ .arrow{
         .progsub ul li{
             margin: 0;
             border: 0;
+        }
+        .bsced {
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
 
     /* abtsub */
@@ -717,6 +718,7 @@ input[type="checkbox"]:checked ~ .arrow{
         left: 170px;
         background-color:#1c4da1 ;
     }
+
 
     /* abtsub */
     input[type="checkbox"]:checked ~ .abtsub{
