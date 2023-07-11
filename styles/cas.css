@@ -310,7 +310,15 @@ img {
 
 
 /*Start of Careers*/
-
+.career-title{
+    
+    
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+}
 .career-op {
     width: 100%;
     background-color: rgba(242, 242, 242, 1);
