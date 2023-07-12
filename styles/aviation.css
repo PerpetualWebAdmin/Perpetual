@@ -94,7 +94,7 @@ img {
 
 .program-logo-container > img {
     max-width: 100%;
-    width: 250px;
+    width: 350px;
     object-fit: contain
 }
 /* end of overview */
@@ -368,3 +368,13 @@ section.card-section {
   }
   
   /* End */
+.open-imgs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+.hidden-imgs{
+
+}
