@@ -18,8 +18,8 @@ imgs.forEach(e =>{
         }
     })
 
-  
 })
+
 
 hiddenImgs.addEventListener('click', () =>{
     openImgs.classList.remove('active');
