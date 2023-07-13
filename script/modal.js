@@ -33,5 +33,7 @@ closeModal.addEventListener('click', () =>{
 
 const carouselButtons = document.querySelectorAll('.carousel');
 carouselButtons.forEach(n =>{
-    
+    n.addEventListener('click', () =>{
+        
+    })
 })

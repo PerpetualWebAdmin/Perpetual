@@ -437,13 +437,6 @@ button.next{
 	cursor: pointer;
 	z-index: 100;
 }
-.closetag > span{
-    display: block;
-	background-color: black;
-	width: 25px;
-	height: 5px;
-	transform: rotate(45deg);
-}
-.closetag > span:nth-child(2){
-    transform: translateY(-5px) rotate(-45deg);
+.fa-x{
+    width: 90px;
 }

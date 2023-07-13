@@ -157,6 +157,15 @@ input[type="checkbox"]:checked ~ .arrow{
      transition: all 0.3s ease;
  }
 /*End of Hamburger Menu*/
+
+.yellow{
+    top: 95px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: var(--default-6);
+}
 /*End of Navigation Bar*/
 
 /*Main Section*/
@@ -171,7 +180,7 @@ input[type="checkbox"]:checked ~ .arrow{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
+    height: 5%;
     position: relative;
     overflow: hidden;
 }
@@ -181,6 +190,7 @@ input[type="checkbox"]:checked ~ .arrow{
     top:0;
     left: 0;
     width: 100%;
+    height: 0px;
     margin-top: 50px;
 }
 /*End of Home Section*/
