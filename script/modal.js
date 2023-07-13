@@ -3,6 +3,7 @@ const openImgs = document.querySelector('.open-imgs');
 const hiddenImgs = document.querySelector('.hidden-imgs');
 const image = document.querySelector('.open-imgs > img');
 const modalTitle = document.querySelector('.modal-title');
+const closeModal = document.querySelector('.closetag');
 
 imgs.forEach(e =>{
     e.addEventListener('click', n =>{
@@ -23,4 +24,14 @@ imgs.forEach(e =>{
 
 hiddenImgs.addEventListener('click', () =>{
     openImgs.classList.remove('active');
+})
+closeModal.addEventListener('click', () =>{
+    openImgs.classList.remove('active');
+})
+
+//Buttons
+
+const carouselButtons = document.querySelectorAll('.carousel');
+carouselButtons.forEach(n =>{
+    
 })

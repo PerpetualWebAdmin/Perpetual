@@ -59,7 +59,7 @@ const closeModal = (e) => {
 
 //Zoom Section
 document.querySelector('.modal-zoom.in').addEventListener('click', e => {
-	if(zoomLevel < 4)
+ 	if(zoomLevel < 4)
 	zoomLevel++;
 	adjustZoom(zoomLevel)
 	

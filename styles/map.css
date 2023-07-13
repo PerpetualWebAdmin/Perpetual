@@ -135,7 +135,7 @@
 	position: fixed;
 	top: inherit;
 	left:inherit;
-transform: translate(5px,12px);
+	transform: translate(5px,12px);
 }
 
 .modal-zoom.in > span:nth-child(2) {

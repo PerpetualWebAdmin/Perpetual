@@ -368,7 +368,7 @@ img {
     justify-content: center;
 }
 
-.facility-imgs-containter img {
+.facility-imgs-containter > .imgs > img {
     min-width: 300px;
     max-width: 450px;
     object-fit: contain;
@@ -385,6 +385,7 @@ img {
     flex-direction: column;
     display: none;
     color: white;
+   
 }
 .hidden-imgs{
         width: 100%;
@@ -392,7 +393,57 @@ img {
         position: fixed;
         background-color: #3a4a6da9;
         z-index: -1;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+      
 }
 .open-imgs.active{
     display: flex;
+}
+.open-imgs > img{
+    margin-top: 1.5rem;
+    width: 55%;
+}
+button{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: .25rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+button:hover, button:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+button:focus{
+    outline: 1px solid black;
+}
+button.prev{
+    left: 21.7rem;
+}
+button.next{
+    right: 21.7rem;
+}
+
+.closetag{
+    position: fixed;
+	top: 120px;
+	right: 300px;
+	cursor: pointer;
+	z-index: 100;
+}
+.closetag > span{
+    display: block;
+	background-color: black;
+	width: 25px;
+	height: 5px;
+	transform: rotate(45deg);
+}
+.closetag > span:nth-child(2){
+    transform: translateY(-5px) rotate(-45deg);
 }
