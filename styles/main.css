@@ -160,6 +160,7 @@ input[type="checkbox"]:checked ~ .arrow{
 /*End of Hamburger Menu*/
 
 .yellow{
+    z-index: -1;
     top: 95px;
     position: absolute;
     width: 100%;
@@ -174,9 +175,7 @@ input[type="checkbox"]:checked ~ .arrow{
 /*Start of Home Section*/
 .Home{
     width: 100%;
-   
 }
-
 .hm-vid{
     display: flex;
     align-items: center;
@@ -191,8 +190,13 @@ input[type="checkbox"]:checked ~ .arrow{
     top:0;
     left: 0;
     width: 100%;
-    height: 535px;
     margin-top: 100px;
+}
+.svg-file{
+    bottom: -36px;
+    width: 100px;
+    position: absolute;
+    cursor: pointer;
 }
 /*End of Home Section*/
 
@@ -542,7 +546,9 @@ input[type="checkbox"]:checked ~ .arrow{
 
 @media(max-width: 768px){
 
-
+    .svg-file{
+        display: none;
+    }
    /*News and Updates Section*/
     .newupimg{
         width: 70%;
@@ -709,6 +715,11 @@ input[type="checkbox"]:checked ~ .arrow{
 }
 
 @media(min-width: 1366px) {
+    /*Video*/
+    .vid-intro{
+        height: 532px;
+    }
+
 
     /* start of sub menus */
 
