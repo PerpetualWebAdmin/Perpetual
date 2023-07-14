@@ -14,16 +14,12 @@ imgs.forEach((e,index) =>{
         openImgs.classList.toggle('active');
         image.src = n.target.src;
 
-        console.log(n.target.src);
-
         if(n.target.alt == ''){
             modalTitle.innerHTML = 'Facilities'
         }else{
             modalTitle.innerHTML = n.target.alt;
         }
-
     })
-
 })
 
 

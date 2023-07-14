@@ -23,13 +23,16 @@ body{
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
 }
 .school-automate-desc{
+    box-shadow: 2px 2px 5px #9e9c9c;
     border-radius: 1rem;
     margin-left: 2rem;
     padding: 20px;
     width: 600px;
     background-color: white;
+    border: 1px solid #ffc63e;
 }
 .school-automate-title{
     color: #1c4da1;

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap');
+
+
 /* set all image width to full device width */
 img {
     width: 100%;
@@ -33,7 +36,10 @@ img {
     border-radius: 16px;
 }
 
-
+.mini-nav > ul >  li> a:hover{
+    background-color: var(--default-back);
+    color: white;
+}
 /* flex container for overview for programs */
 .program-overview {
     display: flex;
@@ -136,7 +142,8 @@ img {
 
 .mission-vision-card > p {
     padding: 10px 75px 30px 75px;
-    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
 }
 /* end of mission and vision */
 
