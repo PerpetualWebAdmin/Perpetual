@@ -218,7 +218,8 @@ input[type="checkbox"]:checked ~ .arrow{
     grid-template-columns: 360px 360px 360px;
     gap: 10px 3rem;
     place-items: center;
-    margin: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .newupimg2{
     width: 95%;
