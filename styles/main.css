@@ -308,7 +308,7 @@ input[type="checkbox"]:checked ~ .arrow{
 .Campuses{
     width: 100%;
     height: auto;
-    background-color: #f8f8f8;
+    background-color: #e6e6e6;
 }
 .camp{
     text-align: center;
