@@ -541,6 +541,12 @@ input[type="checkbox"]:checked ~ .arrow{
 }
 
 @media(max-width: 1365px){
+    .newup-grid{
+        display: grid;
+        grid-template-columns: 360px;
+        place-items: center;
+        margin-left: 50px;
+    }
     /*Start of Hamburger Menu*/
     .navham{
         display: block;
