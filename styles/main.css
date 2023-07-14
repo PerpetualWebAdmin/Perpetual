@@ -256,6 +256,7 @@ input[type="checkbox"]:checked ~ .arrow{
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 5px #9e9c9c;
+    
 }
 .newup-card-1{
     width: 350px;
