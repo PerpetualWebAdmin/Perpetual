@@ -14,7 +14,6 @@ mapModal.addEventListener('mousedown', e => {
 
 	document.onmouseup = closeDrag
 	document.onmousemove = elementDrag
-	console.log('test');
 })
 const elementDrag = e => {
 	e = window.event;
@@ -35,14 +34,16 @@ const elementDrag = e => {
 	
 	let currentHeight = mapModal.clientHeight
 	let currentWidth = mapModal.clientWidth
-	
+
 	// boundary
 	if(mapModal.clientWidth / mapModal.clientHeight < mapModal.naturalWidth / mapModal.naturalHeight) {
 		currentHeight = (currentWidth * mapModal.naturalHeight) / mapModal.naturalWidth 
 	} else if (mapModal.clientWidth / mapModal.clientHeight > mapModal.naturalWidth / mapModal.naturalHeight) { // wip
-
+		currentWidth = mapModal.naturalWidth * currentHeight / mapModal.naturalHeight 
 	}
 
+
+	console.log(newPositionX - currentWidth/2, currentWidth)
 	if(
 		newPositionY - currentHeight/2 >= 0 
 		|| newPositionY + currentHeight/2 <= window.innerHeight 
