@@ -8,6 +8,7 @@ mapModal.addEventListener('mousedown', e => {
 	e = e || window.event;
 	e.preventDefault()
 	if(!zoomLevel) return;
+	
 	initial_x = e.clientX
 	initial_y = e.clientY
 
@@ -16,7 +17,6 @@ mapModal.addEventListener('mousedown', e => {
 })
 const elementDrag = e => {
 	e = window.event;
-	
 
 	new_x = e.clientX;
 	new_y = e.clientY;
@@ -28,9 +28,32 @@ const elementDrag = e => {
 	initial_x = tmp[0]
 	initial_y = tmp[1]
 	
-	mapModal.style.top = (mapModal.offsetTop - new_y) + 'px';
-	mapModal.style.left = (mapModal.offsetLeft - new_x) + 'px';
+	let newPositionY = mapModal.offsetTop - new_y
+	let newPositionX = mapModal.offsetLeft - new_x
+	
+	
+	let currentHeight = mapModal.clientHeight
+	let currentWidth = mapModal.clientWidth
+	
+	// boundary
+	if(mapModal.clientWidth / mapModal.clientHeight < mapModal.naturalWidth / mapModal.naturalHeight) {
+		currentHeight = (currentWidth * mapModal.naturalHeight) / mapModal.naturalWidth 
+	} else if (mapModal.clientWidth / mapModal.clientHeight > mapModal.naturalWidth / mapModal.naturalHeight) { // wip
+
+	}
+
 	mapModal.style.cursor = 'grabbing'
+
+	if(
+		newPositionY - currentHeight/2 >= 0 
+		|| newPositionY + currentHeight/2 <= window.innerHeight 
+		|| newPositionX - currentWidth/2 >= 0 
+		|| newPositionX + currentWidth/2 <= window.innerWidth ) {
+			return
+		}
+		
+	mapModal.style.top = (newPositionY) + 'px';
+	mapModal.style.left = (newPositionX) + 'px';
 }
 const closeDrag = e => {
 	console.log('mouse up event')
