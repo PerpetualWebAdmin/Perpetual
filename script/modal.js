@@ -29,11 +29,3 @@ closeModal.addEventListener('click', () =>{
     openImgs.classList.remove('active');
 })
 
-//Buttons
-
-const carouselButtons = document.querySelectorAll('.carousel');
-carouselButtons.forEach(n =>{
-    n.addEventListener('click', () =>{
-        
-    })
-})
