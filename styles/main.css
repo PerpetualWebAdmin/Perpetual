@@ -215,35 +215,17 @@ input[type="checkbox"]:checked ~ .arrow{
 
 .newup-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
-    gap: 50px 1.5rem;
-    justify-content: center;
-}
-.newupimg{
-    object-fit: cover;
-    width: 75%;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    margin-left: 1.5rem;
+    grid-template-columns: 360px 360px 360px;
+    gap: 10px 3rem;
+    place-items: center;
+    margin: 100px;
 }
 .newupimg2{
     width: 95%;
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.newupimg3{
-    width: 95%;
-    padding-top: 2rem;
-    padding-left: 1rem;
-}
-.newupimg4{
-    width: 85%;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    margin-left: 1rem;
 
-  
-}
 .newup-list{
     list-style: none;
 }
@@ -256,16 +238,8 @@ input[type="checkbox"]:checked ~ .arrow{
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 5px #9e9c9c;
-    
 }
-.newup-card-1{
-    width: 350px;
-    height: 520px;
-    margin: 20px;
-    padding: 1rem;
-    box-shadow: 2px 2px 5px #9e9c9c;
-    border-radius: 1rem;
-}
+
 .newuptitle{
     padding: 1rem;
     text-align: center;
@@ -275,34 +249,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: justify;
     font-size: 15px;
 }
-.newuptitle-2{
-    padding: 1rem;
-    text-align: center;
-}
-.newup-contents-2{
-    padding-top: 1rem;
-    text-align: justify;
-    font-size: 15px;
-}
-.newuptitle-3{
-    text-align: center;
-    padding: 1rem;
-    font-size: 15px;
-}
-.newup-contents-3{
-    padding-top: 0.2rem;
-    text-align: justify;
-    font-size: 15px;
-}
-.newuptitle-4{
-    text-align: center;
-    padding: 1rem;
-}
-.newup-contents-4{
-    padding-top: 0.2rem;
-    text-align: justify;
-    font-size: 15px;
-}
+
 .newup-readm{
     margin: 1rem;
     display: flex;
