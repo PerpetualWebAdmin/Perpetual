@@ -14,6 +14,7 @@ mapModal.addEventListener('mousedown', e => {
 
 	document.onmouseup = closeDrag
 	document.onmousemove = elementDrag
+	console.log('test');
 })
 const elementDrag = e => {
 	e = window.event;
@@ -42,8 +43,6 @@ const elementDrag = e => {
 
 	}
 
-	mapModal.style.cursor = 'grabbing'
-
 	if(
 		newPositionY - currentHeight/2 >= 0 
 		|| newPositionY + currentHeight/2 <= window.innerHeight 
@@ -51,15 +50,16 @@ const elementDrag = e => {
 		|| newPositionX + currentWidth/2 <= window.innerWidth ) {
 			return
 		}
-		
+	
+	mapModal.style.cursor = 'grabbing'
 	mapModal.style.top = (newPositionY) + 'px';
 	mapModal.style.left = (newPositionX) + 'px';
 }
 const closeDrag = e => {
 	console.log('mouse up event')
-	mapModal.style.cursor = null;
 	document.onmousemove = null;
 	document.onmouseup = null;
+	mapModal.style.cursor = null;
 }
 
 //Modal Section
