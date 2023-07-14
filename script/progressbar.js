@@ -3,7 +3,6 @@ const scrollProgressBar = document.querySelector('#progress-bar');
 function scrollProgress(){
     const totalheight = document.body.scrollHeight;
     const currentDistance = document.documentElement.scrollTop;
-
     const windowHeight = document.documentElement.clientHeight;
 
     const scrolledPerecent = (currentDistance/ 

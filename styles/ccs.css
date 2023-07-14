@@ -405,7 +405,8 @@ img {
     width: 55%;
 }
 button{
-    position: absolute;
+    position: fixed;
+   
     background: none;
     border: none;
     font-size: 4rem;
@@ -424,10 +425,10 @@ button:focus{
     outline: 1px solid black;
 }
 button.prev{
-    left: 21.7rem;
+    left: 240px;
 }
 button.next{
-    right: 21.7rem;
+    right: 240px;
 }
 
 .closetag{

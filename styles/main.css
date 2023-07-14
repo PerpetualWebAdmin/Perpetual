@@ -220,6 +220,7 @@ input[type="checkbox"]:checked ~ .arrow{
     justify-content: center;
 }
 .newupimg{
+    object-fit: cover;
     width: 75%;
     padding-top: 2rem;
     padding-left: 2rem;
@@ -252,16 +253,16 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 350px;
     height: 450px;
     margin: 20px;
-   
     border-radius: 1rem;
     padding: 1rem;
+    box-shadow: 2px 2px 5px #9e9c9c;
 }
 .newup-card-1{
     width: 350px;
     height: 520px;
     margin: 20px;
     padding: 1rem;
- 
+    box-shadow: 2px 2px 5px #9e9c9c;
     border-radius: 1rem;
 }
 .newuptitle{
@@ -551,6 +552,7 @@ input[type="checkbox"]:checked ~ .arrow{
     }
    /*News and Updates Section*/
     .newupimg{
+       
         width: 70%;
     }
     .newup-card{
