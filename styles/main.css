@@ -542,10 +542,10 @@ input[type="checkbox"]:checked ~ .arrow{
 
 @media(max-width: 1365px){
     .newup-grid{
-        display: grid;
-        grid-template-columns: 360px;
-        place-items: center;
-        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 45px;
     }
     /*Start of Hamburger Menu*/
     .navham{
