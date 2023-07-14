@@ -101,3 +101,11 @@ const adjustZoom = (x) => {
 		mapModal.removeAttribute('style')
 	}
 }
+
+
+//Escape Key
+window.addEventListener('keydown', function(event){
+    if(event.key === 'Escape'){
+		Modal.classList.remove('active');
+    }
+} )

@@ -31,6 +31,12 @@ closeModal.addEventListener('click', () =>{
 })
 
 
+
+window.addEventListener('keydown', function(event){
+    if(event.key === 'Escape'){
+        openImgs.classList.remove('active');
+    }
+} )
 //Buttons
 
 const carouselButtons = document.querySelectorAll('.carousel');
