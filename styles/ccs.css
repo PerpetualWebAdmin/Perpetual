@@ -33,7 +33,10 @@ img {
     border-radius: 16px;
 }
 
-
+.mini-nav > ul >  li> a:hover{
+    background-color: var(--default-back);
+    color: white;
+}
 /* flex container for overview for programs */
 .program-overview {
     display: flex;
