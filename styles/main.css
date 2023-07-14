@@ -214,12 +214,12 @@ input[type="checkbox"]:checked ~ .arrow{
 /*End of News and Update Title*/
 
 .newup-grid{
-    display: grid;
-    grid-template-columns: 360px 360px 360px;
-    gap: 10px 3rem;
-    place-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+    
+    width: 100%;
 }
 .newupimg2{
     width: 95%;
@@ -265,7 +265,11 @@ input[type="checkbox"]:checked ~ .arrow{
     border: 3px solid black;
     border-radius: 3rem;
 }
-
+.newup-readm-btn:hover{
+    transition: 0.2s ease-in-out;
+    color: white;
+    background-color: var(--default-back);
+}
 /*End of Card List*/
 
 /*End of News and Update Section*/
@@ -541,12 +545,7 @@ input[type="checkbox"]:checked ~ .arrow{
 }
 
 @media(max-width: 1365px){
-    .newup-grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 45px;
-    }
+
     /*Start of Hamburger Menu*/
     .navham{
         display: block;
