@@ -79,9 +79,6 @@ const closeModal = (e) => {
 	zoomLevel = 0
 }
 
-mapModal.addEventListener('click', () =>{
-	Modal.classList.remove('active');
-})
 
 
 //Zoom Section
