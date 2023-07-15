@@ -541,7 +541,7 @@ input[type="checkbox"]:checked ~ .arrow{
     .newup-card{
         width: auto;
         height: auto;
-        margin-left: 40px;
+        margin-left: 15px;
     }
     .newup-card-1{
         width: auto;
