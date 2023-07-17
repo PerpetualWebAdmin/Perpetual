@@ -331,7 +331,6 @@ input[type="checkbox"]:checked ~ .arrow{
 
     /* Generalized card */
     .camp-pic-container {
-      
         display: block;
     }
     .camp-pic {
