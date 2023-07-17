@@ -335,7 +335,7 @@ input[type="checkbox"]:checked ~ .arrow{
         justify-content: center;
     }
     .camp-pic {
-        width: 350px;
+        width: 300px;
     }
 
 .camp-branch{
