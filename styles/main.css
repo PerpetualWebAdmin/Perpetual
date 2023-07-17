@@ -293,12 +293,12 @@ input[type="checkbox"]:checked ~ .arrow{
 .newup-readm-btn{
     padding:0.5rem;
     border: 3px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .newup-readm-btn:hover{
     transition: 0.2s ease-in-out;
-    color: white;
-    background-color: var(--default-back);
+    color: black;
+    background-color: var(--default-6);
 }
 /*End of Card List*/
 
@@ -461,25 +461,23 @@ input[type="checkbox"]:checked ~ .arrow{
 
 .footer-top {
     background-color: rgba(50, 81, 162, 1);
-    height: 100px;
-    display:flex;
-    align-items: center;
+    padding: 20px;
     
 }
 .footer-top-ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    gap: 15px;
+   height: 100%;
+
 }
 .footer-top-ul > li > a{
     color: white;
-   
+    padding: 5px 10px;
     text-decoration: none;
+    display: block;
 }
 .footer-top-ul > li{
     list-style: none;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer-bottom {
