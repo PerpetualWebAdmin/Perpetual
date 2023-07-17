@@ -309,6 +309,7 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 100%;
     height: auto;
     background-color: #e6e6e6;
+    padding: 40px 20px;
 }
 .camp{
     text-align: center;
@@ -322,25 +323,32 @@ input[type="checkbox"]:checked ~ .arrow{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 50px 1.5rem;
-    
+    vertical-align: middle;
     padding-bottom: 1rem;
-    align-items: end;
+    
 }
 /*Cards*/
 
     /* Generalized card */
     .camp-pic-container {
       
-        display: flex;
-        justify-content: center;
+        display: block;
     }
     .camp-pic {
-        width: 300px;
+        width: 100%;
     }
 
+.main-camp{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 .camp-branch{
-    width: 350px;
+    overflow: hidden;
+    
     border-radius: 23px;
+    padding-bottom: 20px;
     background: #ffffff;
     box-shadow: 16px 16px 32px #d4d4d4, -16px -16px 32px #ffffff;
 }
