@@ -6,7 +6,7 @@ const modalTitle = document.querySelector('.modal-title');
 const closeModal = document.querySelector('.closetag');
 
 
-let currentIndex = -1;
+
 imgs.forEach((e,index) =>{
 
     e.addEventListener('click', n =>{
@@ -38,7 +38,7 @@ window.addEventListener('keydown', function(event){
     }
 } )
 //Buttons
-
+let currentIndex = -1;
 const carouselButtons = document.querySelectorAll('.carousel');
 carouselButtons.forEach(n =>{
     let x = 0;
