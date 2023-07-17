@@ -482,10 +482,16 @@ input[type="checkbox"]:checked ~ .arrow{
 .footer-icon > li{
     display: inline-block;
     list-style: none;
-
 }
-
-
+.footer-icons{
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: top;
+}
+.footer-icons > li{
+    padding-right: 10px;
+    list-style: none;
+}
 .footer-bottom {
     background-color: white;
     height: 100px;
