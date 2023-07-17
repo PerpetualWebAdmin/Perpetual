@@ -356,8 +356,8 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 0.5rem;
     color: var(--default-back);
 }
-.camp-lag-loc{
-    font-size: 15px;
+.camp-loc{
+    font-size: 13px;
     padding-top: 0.5rem;
     text-align: center;
     color: var(--default-back);
@@ -374,13 +374,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-gma-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-/*End of GMA*/
+
 
 /*Start of Manila*/
 .camp-sampaloc{
@@ -393,12 +387,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-sampaloc-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Manila*/
 
 /*Start of Pangasinan*/
@@ -413,12 +402,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-pangasinan-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Pangasinan*/
 
 /*Start of Isabela College*/
@@ -433,12 +417,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-isabela-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Isabela*/
 
 /*Start of Roxas*/
@@ -452,12 +431,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-roxas-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Roxas*/
 
 /*Start of Medical College*/
@@ -471,12 +445,7 @@ input[type="checkbox"]:checked ~ .arrow{
     text-align: center;
     color: var(--default-back);
 }
-.camp-medical-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Medical College*/
 
 /*End of Campuses Section*/
