@@ -442,10 +442,11 @@ input[type="checkbox"]:checked ~ .arrow{
     display: inline-block;
     vertical-align: top;
 }
-
-.icons{
-    
+.footer-icon > li{
+    display: inline-block;
+    list-style: none;
 }
+
 
 .footer-bottom {
     background-color: white;
