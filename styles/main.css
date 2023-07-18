@@ -358,7 +358,7 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-left: 1rem; 
     overflow: hidden;
 }
-.camp-lag-title{
+.camp-title{
     text-align: center;
     padding-top: 0.5rem;
     color: var(--default-back);
@@ -376,26 +376,14 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-gma-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-
-
+/*End of GMA*/ 
 /*Start of Manila*/
 .camp-sampaloc{
     width: 300px;
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-sampaloc-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-
-/*End of Manila*/
+/*End of Manila*/ 
 
 /*Start of Pangasinan*/
 .camp-pangasinan{
@@ -403,11 +391,6 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
     
-}
-.camp-pangasinan-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
 }
 
 /*End of Pangasinan*/
@@ -417,14 +400,7 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 300px;
     padding-top: 2rem;
     padding-left: 1rem;
-
 }
-.camp-isabela-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-
 /*End of Isabela*/
 
 /*Start of Roxas*/
@@ -433,12 +409,6 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-roxas-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-
 /*End of Roxas*/
 
 /*Start of Medical College*/
@@ -447,12 +417,6 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-medical-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-
 /*End of Medical College*/
 
 /*End of Campuses Section*/
@@ -466,7 +430,6 @@ input[type="checkbox"]:checked ~ .arrow{
 }
 .footer-top-ul {
    height: 100%;
-
 }
 .footer-top-ul > li > a{
     color: white;
@@ -479,12 +442,10 @@ input[type="checkbox"]:checked ~ .arrow{
     display: inline-block;
     vertical-align: top;
 }
-.footer-icon > li{
-    display: inline-block;
-    list-style: none;
 
+.icons{
+    
 }
-
 
 .footer-bottom {
     background-color: white;
