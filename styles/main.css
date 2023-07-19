@@ -447,7 +447,15 @@ input[type="checkbox"]:checked ~ .arrow{
     list-style: none;
 }
 
-
+.footer-icons{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.footer-icons > li{
+    padding-right: 10px;
+    list-style: none;
+}
 .footer-bottom {
     background-color: white;
     height: 100px;
