@@ -1,0 +1,28 @@
+#pic-procedures{
+    background-color: #e6e6e6;
+}
+.ol-proceedures{
+   width: 400px;
+   margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+.ol-proceedures > h1{
+    background-color: #1c4da1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+   
+}
+.imgs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #e6e6e6;
+    
+}
+.imgs > img{
+    width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
