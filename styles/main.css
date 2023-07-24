@@ -267,7 +267,7 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 350px;
     
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.25rem;
     box-shadow: 2px 2px 5px #9e9c9c;
 }
 
@@ -293,12 +293,12 @@ input[type="checkbox"]:checked ~ .arrow{
 .newup-readm-btn{
     padding:0.5rem;
     border: 3px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .newup-readm-btn:hover{
     transition: 0.2s ease-in-out;
-    color: white;
-    background-color: var(--default-back);
+    color: black;
+    background-color: var(--default-6);
 }
 /*End of Card List*/
 
@@ -309,6 +309,7 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 100%;
     height: auto;
     background-color: #e6e6e6;
+    padding: 40px 20px;
 }
 .camp{
     text-align: center;
@@ -322,36 +323,47 @@ input[type="checkbox"]:checked ~ .arrow{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 50px 1.5rem;
-    
+    vertical-align: middle;
     padding-bottom: 1rem;
-    align-items: end;
+    
 }
 /*Cards*/
 
     /* Generalized card */
     .camp-pic-container {
-        display: flex;
-        justify-content: center;
+        display: block;
     }
     .camp-pic {
-        width: 300px;
+        width: 100%;
     }
 
+.main-camp{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
 
+.camp-branch{
+    overflow: hidden;
+    border-radius: 23px;
+    padding-bottom: 20px;
+    background: #ffffff;
+    box-shadow: 16px 16px 32px #d4d4d4, -16px -16px 32px #ffffff;
+}
 /*Start of Binan*/
 .camp-bin{
-    width: 300px;
+    width: 350px;
     padding-top: 2rem;
     padding-left: 1rem; 
     overflow: hidden;
 }
-.camp-lag-title{
+.camp-title{
     text-align: center;
     padding-top: 0.5rem;
     color: var(--default-back);
 }
-.camp-lag-loc{
-    font-size: 15px;
+.camp-loc{
+    font-size: 13px;
     padding-top: 0.5rem;
     text-align: center;
     color: var(--default-back);
@@ -363,37 +375,14 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-gma-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-gma-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-/*End of GMA*/
-
+/*End of GMA*/ 
 /*Start of Manila*/
 .camp-sampaloc{
     width: 300px;
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-sampaloc-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-sampaloc-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-/*End of Manila*/
+/*End of Manila*/ 
 
 /*Start of Pangasinan*/
 .camp-pangasinan{
@@ -402,17 +391,7 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-left: 1rem;
     
 }
-.camp-pangasinan-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-pangasinan-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
+
 /*End of Pangasinan*/
 
 /*Start of Isabela College*/
@@ -420,18 +399,6 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 300px;
     padding-top: 2rem;
     padding-left: 1rem;
-
-}
-.camp-isabela-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-isabela-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
 }
 /*End of Isabela*/
 
@@ -441,17 +408,6 @@ input[type="checkbox"]:checked ~ .arrow{
     padding-top: 2rem;
     padding-left: 1rem;
 }
-.camp-roxas-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-roxas-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
 /*End of Roxas*/
 
 /*Start of Medical College*/
@@ -459,17 +415,6 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 300px;
     padding-top: 2rem;
     padding-left: 1rem;
-}
-.camp-medical-title{
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
-}
-.camp-medical-loc{
-    font-size: 15px;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: var(--default-back);
 }
 /*End of Medical College*/
 
@@ -479,27 +424,37 @@ input[type="checkbox"]:checked ~ .arrow{
 
 .footer-top {
     background-color: rgba(50, 81, 162, 1);
-    height: 100px;
-    display:flex;
-    align-items: center;
+    padding: 20px;
     
 }
 .footer-top-ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    gap: 15px;
+   height: 100%;
 }
 .footer-top-ul > li > a{
     color: white;
-   
+    padding: 5px 10px;
     text-decoration: none;
+    display: block;
 }
 .footer-top-ul > li{
     list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-icon > li{
+    display: inline-block;
+    list-style: none;
 }
 
+.footer-icons{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.footer-icons > li{
+    padding-right: 10px;
+    list-style: none;
+}
 .footer-bottom {
     background-color: white;
     height: 100px;
@@ -541,7 +496,7 @@ input[type="checkbox"]:checked ~ .arrow{
     .newup-card{
         width: auto;
         height: auto;
-        margin-left: 40px;
+        margin-left: 15px;
     }
     .newup-card-1{
         width: auto;

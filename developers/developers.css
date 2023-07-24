@@ -1,0 +1,32 @@
+.devs{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+ 
+}
+img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.dev-members{
+    margin-top: 1rem;
+    box-shadow: 2px 2px 5px #9e9c9c;
+    width: 350px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-left: 1rem;
+   
+}
+.names {
+    padding-top: 1rem;
+}
+p{
+    padding-top: 0.25rem;
+}

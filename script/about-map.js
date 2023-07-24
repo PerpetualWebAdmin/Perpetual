@@ -81,6 +81,7 @@ const closeModal = (e) => {
 }
 
 
+
 //Zoom Section
 document.querySelector('.modal-zoom.in').addEventListener('click', e => {
  	if(zoomLevel < 4)
@@ -102,3 +103,11 @@ const adjustZoom = (x) => {
 		mapModal.removeAttribute('style')
 	}
 }
+
+
+//Escape Key
+window.addEventListener('keydown', function(event){
+    if(event.key === 'Escape'){
+		Modal.classList.remove('active');
+    }
+} )

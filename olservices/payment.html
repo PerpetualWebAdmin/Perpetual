@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Clark Leovison C. Rey, Jerome Evangelista, Rojeth Justine Javaluyas"
+    />
+    <title>Online Payment - University of Perpetual Help System - Laguna</title>
+    <link rel="icon" type="x-icon" href="/img/SSS.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/olproceedures.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Start of Navigation Bar-->
+      <nav class="navbar">
+        <!--Start of Navigation Logo-->
+        <div class="navlogo">
+          <a href="/index.html">
+            <img src="/img/log1.png" alt="Perpetual Logo" class="perpslogo"
+          /></a>
+        </div>
+        <!--End of Navigation Logo-->
+        <div class="hitbox"></div>
+
+        <ul class="navlist">
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link">Home</a>
+          </li>
+
+          <!--Start of Program SubMenu-->
+          <li class="nav-item">
+            <input type="checkbox" id="programs-checkbox" />
+            <label for="programs-checkbox">Programs</label>
+            <i class="fa-solid fa-caret-down arrow prog-arrow"></i>
+            <!--Start of Basic Education-->
+            <div class="progsub">
+              <ul>
+                <li class="nav-link noHide">
+                  <a href="#"
+                    >Basic Education
+                    <i class="fa-solid fa-caret-down arrow bsed-arrow"></i
+                  ></a>
+                  <div class="progsub-bsed">
+                    <ul>
+                      <li class="bsced"><a href="#">Senior High School</a></li>
+                      <li class="bsced"><a href="">Junior High School</a></li>
+                      <li class="bsced"><a href="">Grade School</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="/programs/aviation/aviation.html" class="nav-link"
+                    >Aviation</a
+                  >
+                </li>
+                <li>
+                  <a href="/programs/cas/cas.html" class="nav-link"
+                    >Arts &amp; Sciences</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Business &amp; Accountancy</a>
+                </li>
+                <li>
+                  <a href="/programs/ccs/ccs.html" class="nav-link"
+                    >Computer Studies</a
+                  >
+                </li>
+                <li>
+                  <a href="/programs/criminology/crim.html" class="nav-link"
+                    >Criminology</a
+                  >
+                </li>
+                <li>
+                  <a href="/programs/education/education.html" class="nav-link"
+                    >Education</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/programs/engineering/engineering.html"
+                    class="nav-link"
+                    >Engineering &amp; Architecture</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Int'l Hospitality Management</a>
+                </li>
+                <li><a href="#" class="nav-link">Maritime</a></li>
+                <li><a href="#" class="nav-link">Law/Juris Doctor</a></li>
+                <li><a href="#" class="nav-link">Graduate School</a></li>
+                <!--End of Master/College Programs-->
+              </ul>
+            </div>
+          </li>
+          <!--End of Program SubMenu-->
+
+          <!--Start of Online Services SubMenu-->
+          <li class="nav-item">
+            <input type="checkbox" id="onlineServices-checkbox" />
+            <label for="onlineServices-checkbox">Online Services</label>
+            <i class="fa-solid fa-caret-down arrow ols-arrow"></i>
+            <div class="olssub">
+              <ul>
+                <li>
+                  <a href="/olservices/gti.html" class="nav-link"
+                    >GTI/Online Grades</a
+                  >
+                </li>
+                <li>
+                  <a href="/olservices/gti.html" class="nav-link">Moodle</a>
+                </li>
+                <li>
+                  <a href="/olservices//gti.html" class="nav-link"
+                    >Google Account</a
+                  >
+                </li>
+                <li><a href="#" class="nav-link">Online Payment</a></li>
+              </ul>
+            </div>
+          </li>
+          <!--End of Online Services SubMenu-->
+
+          <!--Start of Support Services SubMenu-->
+          <li class="nav-item">
+            <input type="checkbox" id="supportServices-checkbox" />
+            <label for="supportServices-checkbox">Support Services</label>
+            <i class="fa-solid fa-caret-down arrow supser-arrow"></i>
+            <div class="supsersub">
+              <ul>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSea8-O2OuuKWgZ17XgKkyLQ7dDOawW31a8vq1nTWDRREODVMQ/viewform"
+                    class="nav-link"
+                    >Alumni</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/support-services/careers/careers.html"
+                    class="nav-link"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Clinic</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">Community Outreach Department</a>
+                </li>
+                <li>
+                  <a href="" class="nav-link"
+                    >External &amp; International Affairs</a
+                  >
+                </li>
+                <li><a href="#" class="nav-link">Guidance and Admission</a></li>
+                <li><a href="" class="nav-link">Library</a></li>
+                <li><a href="#" class="nav-link">Quality Assurance</a></li>
+                <li><a href="#" class="nav-link">Research</a></li>
+              </ul>
+            </div>
+          </li>
+          <!--End of Support Services SubMenu-->
+
+          <li class="nav-item">
+            <a href="#Campuses" class="nav-link">Campuses</a>
+          </li>
+
+          <!--Start of About SubMenu-->
+          <li class="nav-item">
+            <input type="checkbox" id="about-checkbox" />
+            <label for="about-checkbox">About</label>
+            <i class="fa-solid fa-caret-down arrow abt-arrow"></i>
+            <div class="abtsub">
+              <ul>
+                <li><a href="#" class="nav-link">About Us</a></li>
+                <li>
+                  <a href="about/misvision.html" class="nav-link"
+                    >Mission &amp; Vission</a
+                  >
+                </li>
+                <li><a href="#" class="nav-link">Our Philosophy</a></li>
+                <li><a href="#" class="nav-link">Quality Policy</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="about/map.html" class="nav-link">Map</a></li>
+              </ul>
+            </div>
+          </li>
+          <!--End of About SubMenu-->
+          <li class="nav-item">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdx5SjvdftRXbNyjM5rvq83T90XBtdECekIPb8Hn6JipjDQlA/viewform"
+              class="enrlnw"
+              target="_blank"
+              ><span class="navenrl">Enroll Now</span>
+            </a>
+          </li>
+        </ul>
+
+        <!--Start of Hamburger Menu-->
+        <div class="navham">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!--End of Hamburger Menu-->
+      </nav>
+    </header>
+
+    <main>
+      <section id="pic-procedures">
+        <div style="width: 100%; height: 120px"></div>
+
+        <div class="all-proceedures">
+          <div class="ol-proceedures">
+            <h1>Online Payment Proceedures</h1>
+          </div>
+
+          <!--Start of Image Section-->
+          <div class="imgs">
+            <img src="/img/GTI/olpayment/dragonpay01.jpg" alt="" />
+            <img src="/img/GTI/olpayment/dragonpay02.jpg" alt="" />
+            <img src="/img/GTI/olpayment/dragonpay03.jpg" alt="" />
+          </div>
+          <!--End of Image Section-->
+        </div>
+      </section>
+
+      <section class="proceedures">
+        <div class="ol-proceedures second">
+          <h1>Steps Proceedures</h1>
+        </div>
+
+        <div class="list-proceedures">
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins1.png" alt="" />
+            <p>Step 1: Login to your GTI / Online Grades Account</p>
+          </div>
+
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins2.png" alt="" />
+            <p>Step 2 : Select "CLICK TO PAY NOW"</p>
+          </div>
+
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins3.png" alt="" />
+            <p>
+              Step 3: Choose "Particulars" (e.g. Tuition, Downpayment, etc.)
+            </p>
+          </div>
+
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins4.png" alt="" />
+            <p>Step 4: Click "Pay Now"</p>
+          </div>
+
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins5.png" alt="" />
+            <p>
+              Step 5: Select "PAYMENT OPTION" and "ECPay (GCash/Payment
+              Centers)"
+            </p>
+          </div>
+
+          <div class="img-proceedures">
+            <img src="/img/GTI/olpayment/Ins6.png" alt="" />
+            <p>
+              Step 6: Select "PAYMENT OPTION" and "ECPay (GCash/Payment
+              Centers)"
+            </p>
+          </div>
+
+          <div class="img-proceedures">
+            <p>
+              Step 7: Wait for the email from Dragon Pay for your
+              <span>Reference Number</span>
+            </p>
+          </div>
+
+          <div class="img-proceedures1">
+            <img src="/img/GTI/olpayment/Ins8.jpg" alt="" class="gcash"/>
+            <p>Step 8: Select "Pay Bills"</p>
+          </div>
+
+          <div class="img-proceedures1">
+            <img src="/img/GTI/olpayment/Ins9.jpg" alt="" class="gcash"/>
+            <p>Step 9: Select "Pay Bills"</p>
+          </div>
+
+          <div class="img-proceedures1">
+            <img src="/img/GTI/olpayment/Ins10.jpg" alt="" class="gcash"/>
+            <p>Step 10: Choose Dragon Pay"</p>
+          </div>
+
+          <div class="img-proceedures2">
+            <img src="/img/GTI/olpayment/Ins11.jpg" alt="" class="gcash"/>
+            <p>
+              Step 11:Enter the "Reference Number" emailed by Dragon Pay. Encode
+              your contact number, amount and your personal Email."
+            </p>
+          </div>
+        </div>
+      </section>
+
+          <!-- footer -->
+      <footer>
+        <div class="footer-top">
+          <ul class="footer-top-ul">
+            <li><a href="#">About UPHSL JONELTA</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">News</a></li>
+            
+            <div class="footer-icons">
+              <li class="icons"><a href="https://www.facebook.com/uphsl.info.ph" target="_blank"
+              ><i class="fa-brands fa-facebook fa-lg" style="color: #d3c5c5;"></i></a></li>
+            <li class="icons"><a href="https://www.youtube.com/@uphsltv1397" target="_blank"
+              ><i class="fa-brands fa-youtube fa-lg" style="color: #d3c5c5;"></i></a></li>
+            </div>
+            
+          </ul>
+
+          
+        </div>
+
+
+        <div class="footer-bottom">
+          <img class="footer-logo" src="img/LG6.png" alt="" />
+
+          <div class="foot-copyright">
+            <p class="footer-copyright">
+              Copyright © 2023 University of Perpetual Help JONELTA - All Rights
+              Reserved
+            </p>
+          
+           
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/script/navbar.js"></script>
+    <script src="/script/about-map.js"></script>
+  </body>
+</html>
