@@ -1,72 +1,52 @@
-.flex-row, .flex-col {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-content: center;
- align-items: center;
+.img-banner{
+    width: 100%;
+    padding-top: 100px;
 }
 
-.flex-col {
- flex-direction: column;
- flex-wrap: nowrap;
+/*Start of Mini Navigation Bar*/
+.mini-nav {
+    padding-left: 16px;
 }
 
-section {
- padding: 16px;
+.mini-nav > ul{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    width: fit-content;
+    padding: 8px;
+}
+.mini-nav > ul >  li {
+    list-style: none;
+}
+.mini-nav > ul >  li > a{
+    text-decoration: none;
+    color: var(--default-back);
+    font-size: 12px;
+    
+    border: 1px black solid;
+    padding: 12px;
+    display: block;
+    border-radius: 16px;
 }
 
-section > div {
- width: 100%;
- min-width: 333px;
- min-height: 600px;
- height: 100vh;
- border: black 1px solid;
- padding: 10px;
- overflow: hidden;
+.mini-nav > ul >  li> a:hover{
+    background-color: var(--default-back);
+    color: white;
 }
+/*End of Mini Navigation Bar*/
 
-.center-div {
- position: relative;
+
+
+
+/*Start of Progress Bar*/
+.progress-bar{
+    z-index: -1;
+    top: 95px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: var(--default-6);
 }
+/*End of Progress Bar*/
 
-.center-div::after {
- right: 0;
-}
-
-header {
- color: #FFC63E;
- background-color: rgb(22, 56, 128);
- width: fit-content;
- padding: 16px;
- font-size: 32px;
- font-weight: 700;
- margin-top: 20px;
- margin-bottom: 20px;
-}
-
-section img {
- object-fit: contain;
- width: 100%;
- display: block;
-}
-
-.library-logo {
- width: 200px;
-}
-
-section li {
- margin-left: 20px;
-}
-
-.text-center {
- text-align: center;
-}
-
-@media only screen and (min-width:480px) {
- 
- section > div {
-  width: 33%;
- }
-
- 
-}
