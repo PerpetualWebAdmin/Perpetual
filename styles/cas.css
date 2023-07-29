@@ -424,3 +424,9 @@ img {
     display: block;
     background-color: var(--default-6);
 }
+@media(max-width: 720px){
+    .mini-nav{
+        display: none;
+    }
+ 
+}
