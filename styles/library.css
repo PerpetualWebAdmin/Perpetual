@@ -78,7 +78,7 @@ img {
     padding-top: 2vw;
     font-size: 15px;
     text-align: justify;
-    font-family:'Zilla Slab', serif;
+ 
 }
 
 .learn-more-container {
@@ -199,6 +199,65 @@ img {
 .news-title > p{
     text-align: justify;
 }
+.acquisition > h2{
+    text-align: center;
+    padding: 15px 20px;
+}
+.grid-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+.vids-cards > h3{
+    text-align: center;
+}
+
+/*Start of Online Services*/
+.ol-services{
+    background-color: #9e9c9c;
+}
+.ol-services > h1{
+    padding-top: 1rem;
+    text-align: center;
+}
+.online-services-grid{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+.online-cards{
+    width: 410px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.imgs-ol{
+   
+    width: 200px;
+}
+.ebesco{
+    width: 150px;
+}
+.img-online > h3{
+    
+    text-align: center;
+}
+.online-cards > p{
+    text-align: justify;
+}
+
 @media(max-width: 720px){
     .mini-nav{
         display: none;
