@@ -658,7 +658,7 @@ input[type="checkbox"]:checked ~ .arrow{
 @media(min-width: 1366px) {
     /*Video*/
     .vid-intro{
-        height: 532px;
+        height: 450px;
     }
 
 
