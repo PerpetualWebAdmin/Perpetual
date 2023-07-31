@@ -196,10 +196,16 @@ img {
     text-align: center;
     padding: 1rem;
 }
+
 .news-title > p{
     text-align: justify;
 }
+
+/*Start of Acquisition*/
 .acquisition > h2{
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    color: #1c4da1;
     text-align: center;
     padding: 15px 20px;
 }
@@ -208,18 +214,32 @@ img {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
+    
+    width: 100%;
     margin: 20px;
 }
-
+.vids-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #9e9c9c;
+}
 .vids-cards > h3{
     text-align: center;
 }
 
 /*Start of Online Services*/
 .ol-services{
-    background-color: #9e9c9c;
+    background-color: #e6e6e6;
 }
 .ol-services > h1{
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    color: #1c4da1;
     padding-top: 1rem;
     text-align: center;
 }
@@ -232,26 +252,26 @@ img {
  
 }
 .online-cards{
-    width: 410px;
+    width: 400px;
     background-color: white;
     padding: 15px;
     margin: 10px;
     border-radius: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    
 }
 
 .imgs-ol{
-   
-    width: 200px;
+    width: 250px;
 }
 .ebesco{
     width: 150px;
 }
 .img-online > h3{
-    
+    padding: 10px;
+    font-size: 23px;
     text-align: center;
 }
 .online-cards > p{
