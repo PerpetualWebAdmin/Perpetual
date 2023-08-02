@@ -176,6 +176,7 @@ input[type="checkbox"]:checked ~ .arrow{
 .Home{
     width: 100%;
 }
+
 .hm-vid{
     display: flex;
     align-items: center;
@@ -197,6 +198,25 @@ input[type="checkbox"]:checked ~ .arrow{
     width: 100px;
     position: absolute;
     cursor: pointer;
+}
+
+.carousel-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn-nav{
+    height: 15px;
+    margin: 5px;
+    background-color: gray;
+    width: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+}
+.btn-nav.navigator{
+    background-color: rgba(0, 0, 0, 0.75);
 }
 /*End of Home Section*/
 
