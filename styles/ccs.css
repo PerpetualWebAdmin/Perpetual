@@ -79,7 +79,7 @@ img {
     font-size: 16px;
     
 }
-
+/*Learn More*/
 .learn-more-container {
     display: flex;
     justify-content: center;
@@ -91,11 +91,10 @@ img {
     color: #0400D7;
     font-size: 16px;
 }
-
+/*Logo*/
 .program-logo-container {
     display: flex;
     justify-content: center;
-    
 }
 
 .program-logo-container > img {

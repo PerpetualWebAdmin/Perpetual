@@ -1,6 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap');
+
 img{
     width: 100%;
 }
 .banner{
     padding-top: 100px;
+}
+/*Start of Overview Section*/
+.overview{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.overview > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+.main-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header > h1{
+    width: 100%;
+    color: white;
+    background-color: rgba(29, 81, 157, 1);
+    text-align: center;
+    font-size: 4vw;
+    padding: 20px 10px;
+}
+.main-overview > p{
+    padding-top: 2vw;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/*Logo*/
+.overview-logo{
+    display: flex;
+    justify-content: center;
+}
+.overview-logo > img{
+    max-width: 100%;
+    width: 300px;
+    object-fit: contain;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+.img-container > img{
+    width: 600px;
+}
+
+/*Start of Admission*/
+.admission{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #e6e6e6;
+}
+.admission > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+    
+}
+.admission-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.admission-title > h1{
+    width: 100%;
+    color: white;
+    background-color: rgba(29, 81, 157, 1);
+    text-align: center;
+    font-size: 3vw;
+    padding: 15px 10px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.main-container > p{
+    
+    margin-top: 10px;
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+}
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+.container-img > img{
+    width: 300px;
+}
+/*Discipline*/
+.discipline{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.discipline > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+.discipline > h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 81, 157, 1);
+    font-size: 3vw;
+    color: white;
+    padding: 20px;
+}
+.header > h2{
+    width: 500px;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #e6e6e6;
+    padding: 100px;
+    color: rgba(29, 81, 157, 1);
+    border-radius: 20px;
+}
+
+.major-offense{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.major-offense > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+.major-offense > h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 81, 157, 1);
+    font-size: 3vw;
+    color: white;
+    padding: 20px;
+}
+.cards-containers{
+   
+    width: 400px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cards-containers{
+   
+}
+
+.headers > h2{
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 720px){
+    .img-container > img{
+        width: 450px;
+    }
+    
 }
