@@ -342,7 +342,7 @@ input[type="checkbox"]:checked ~ .arrow{
 .camp-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 50px 1.5rem;
+    gap: 40px 1.5rem;
     vertical-align: middle;
     padding-bottom: 1rem;
     
@@ -547,6 +547,7 @@ input[type="checkbox"]:checked ~ .arrow{
     .fa-facebook{
         padding-left: 1.5rem;
     }
+
 }
 
 @media(max-width: 1365px){

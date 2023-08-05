@@ -159,27 +159,61 @@ img{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(29, 81, 157, 1);
+   background-color: #e6e6e6;
     font-size: 3vw;
-    color: white;
+    color:  rgba(29, 81, 157, 1);
     padding: 20px;
 }
 .cards-containers{
-   
-    width: 400px;
+    width: 450px;
     background-color: #e6e6e6;
     padding: 20px;
     border-radius: 10px;
 }
-.cards-containers{
-   
-}
+
 
 .headers > h2{
     text-align: center;
     padding: 10px;
 }
+/*Disciplinary Sanction*/
+.discp-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.discp-actions > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+.discp-actions > h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 81, 157, 1);
+    font-size: 3vw;
+    color: white;
+    padding: 20px;
+}
+.text-container{
+    width: 450px;
+    background-color: rgba(242, 242, 242, 1);
+    color:  rgba(29, 81, 157, 1);
+    border: 2px solid #ffc63e;
+}
+.text-container > p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
 
+.containers-img > img{
+    width: 300px;
+}
 @media (max-width: 720px){
     .img-container > img{
         width: 450px;

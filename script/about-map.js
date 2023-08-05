@@ -3,6 +3,7 @@ const mapModal = document.querySelector('.map-modal > img')
 let initial_x = 0, initial_y = 0
 let new_x = 0, new_y = 0
 let zoomLevel = 0;
+const hiddenModal = document.querySelector('.hidden-modal');
 
 mapModal.addEventListener('mousedown', e => {
 	e = e || window.event;
@@ -70,6 +71,7 @@ const openModal = (e) => {
 
 }
 
+
 document.querySelectorAll('.map-imgs-container > img').forEach(n => {
 	n.addEventListener('click', openModal)
 })
@@ -111,3 +113,8 @@ window.addEventListener('keydown', function(event){
 		Modal.classList.remove('active');
     }
 } )
+
+hiddenModal.addEventListener('click', (e) =>{
+	Modal.classList.remove('active');
+
+})

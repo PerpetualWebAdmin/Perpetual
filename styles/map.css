@@ -63,6 +63,10 @@
 }
 
 /* css for map  */
+.map-imgs-container{
+	display: flex;
+	
+}
 .map-imgs-container > img{
 	cursor: pointer;
 }
@@ -148,5 +152,8 @@
 @media(max-width:720px){
 	.modal-zoom{
 		display: none;
+	}
+	.map-imgs-container > img{
+		width: 95%;
 	}
 }
