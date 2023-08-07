@@ -214,7 +214,79 @@ img{
 .containers-img > img{
     width: 300px;
 }
+/*Summarize*/
+.summarize{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+}
+
+.summarize-container > p{
+    width: 80%;
+    background-color: rgba(242, 242, 242, 1);
+    font-size: 20px;
+    border-radius: 20px;
+    color: rgba(29, 81, 157, 1);
+    padding: 20px;
+    margin-top: 40px;
+   
+}
+.summarize-container > p > span{
+    
+    font-size: 27px;
+}
+.containers-imgs > img{
+    padding-top: 10px;
+    width: 250px
+}
+/*Start of Evaluation of Student Activities*/
+.eosa{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #e6e6e6;
+}
+.eosa > h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 81, 157, 1);
+    font-size: 3vw;
+    color: white;
+    padding: 20px;
+   
+}
+.eosa > div{
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+.main-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content > p{
+    margin: 30px;
+    background-color: white;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    color: rgba(29, 81, 157, 1);
+}
+.main-containers > p > span{
+    font-size: 25px;
+}
+
 @media (max-width: 720px){
+    .summarize-container > p{
+        margin-left: 50px;
+    }
     .img-container > img{
         width: 450px;
     }
