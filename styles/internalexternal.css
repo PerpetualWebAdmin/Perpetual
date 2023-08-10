@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap');
+
+
+/* set all image width to full device width */
+img {
+    width: 100%;
+}
+
+.banner {
+    /* move banner down to avoid getting overlapped by the header */
+    padding-top: 100px;
+}
+
+.mini-nav {
+    padding-left: 16px;
+}
+
+.mini-nav > ul{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    width: fit-content;
+    padding: 8px;
+}
+.mini-nav > ul >  li {
+    list-style: none;
+}
+.mini-nav > ul >  li > a{
+    text-decoration: none;
+    color: var(--default-back);
+    font-size: 12px;
+    
+    border: 1px black solid;
+    padding: 12px;
+    display: block;
+    border-radius: 16px;
+}
+
+.mini-nav > ul >  li> a:hover{
+    background-color: var(--default-back);
+    color: white;
+}
+/* flex container for overview for programs */
+.program-overview {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.program-overview > div {
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+
+.text-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overview-header-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.overview-header-wrapper > h1 {
+    width: 100%;
+    color: white;
+    background-color: rgba(29, 81, 157, 1);
+    text-align: center;
+    font-size: 4vw;
+    padding: 20px 10px;
+}
+
+.text-overview > p{
+    padding-top: 2vw;
+    font-size: 15px;
+    text-align: justify;
+ 
+}
+
+.learn-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.learn-more-container > a {
+    text-align: center;
+    color: #0400D7;
+    font-size: 16px;
+}
+
+.program-logo-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.program-logo-container > img {
+    max-width: 100%;
+    width: 180px;
+    object-fit: contain
+}
+/* end of overview */
+
+/* mission and vision area */
+.mission-vision {
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.mission-vision > div {
+    width: 450px;
+}
+
+.mission-vision-card {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    margin: 25px 10px;
+    border-radius: 10%;
+}
+
+.card-header-wrapper {
+    padding: 30px 0 20px 0;
+}
+
+.card-header-wrapper > h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.mission-vision-card > p {
+    padding: 10px 75px 30px 75px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+}
+/* end of mission and vision */
+
+/*Start of News & Updates Section*/
+.news-updates{
+    width: 100%;
+    background-color: #e6e6e6;
+    
+}
+.main-title{
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.main-title > h1{
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    color: #1c4da1;
+}
+.grid-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-top: 40px;
+   
+}
+.news-cards{
+    width: 350px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px #9e9c9c;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.imgs-news{
+    display: flex;
+    justify-content: center;
+}
+.imgs-news > img{
+    width: 95%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.news-title > h3{
+    text-align: center;
+    padding: 1rem;
+}
+
+.news-title > p{
+    text-align: justify;
+}
+.read-more{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+.read-more > a{
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.read-more > a:hover{
+    transition: 0.25s;
+    background-color: #ffc63e;
+}
+
+/*Start of Quality Objectives*/
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    flex-direction: column;
+  
+}
+.main-content > ul{
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    width: 400px;
+    border-radius: 20px;
+}
+.main-content > ul > li{
+    list-style: none;
+    
+}
+
+
+@media(max-width: 720px){
+    .mini-nav{
+        display: none;
+    }
+ 
+}

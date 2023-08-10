@@ -49,11 +49,14 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    & img{
-        margin-bottom: 10px;
-        width: 600px;
-    } 
+    
+    
 }
+.img-proceedures > img{
+    object-fit: contain;
+    margin-bottom: 10px;
+    width: 600px;
+} 
 .steps{
     width: 50%;
     box-shadow: 2px 2px 1px #e6e6e6;
@@ -89,5 +92,8 @@
         width: 300px;
    
     }
-
+    .img-proceedures > img{
+        width: 400px;
+    }
+   
 }

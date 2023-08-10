@@ -128,8 +128,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 450px;
+    min-width: 350px;
     width: 45%;
+    box-shadow: 2px 2px 5px #9e9c9c;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 .program-img{
     width: 80%;
@@ -296,13 +300,13 @@ img {
 
 /*Start of Careers*/
 .career-title{
-    
-    
+    color: rgba(29, 81, 157, 1);
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: rgba(242, 242, 242, 1);
     text-align: center;
+    font-size: 40px;
 }
 .career-op {
     width: 100%;
