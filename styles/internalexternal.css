@@ -218,27 +218,22 @@ img {
     background-color: #ffc63e;
 }
 
-/*Start of Quality Objectives*/
-.main-content{
+/*Start of Services*/
+.services{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-   
+    justify-content: space-evenly;
     flex-direction: column;
-  
 }
-.main-content > ul{
-    margin: 20px;
-    padding: 20px;
-    background-color: #e6e6e6;
-    width: 400px;
-    border-radius: 20px;
+.services > h1{
+    font-family: 'Zilla Slab', serif;
+    font-size: 40px;
+    color: #1c4da1;
+    padding-top: 10px;
+    text-align: center;
 }
-.main-content > ul > li{
-    list-style: none;
-    
+.main-content{
+    padding: 10px;
 }
-
 
 @media(max-width: 720px){
     .mini-nav{
