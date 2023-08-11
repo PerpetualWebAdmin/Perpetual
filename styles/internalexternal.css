@@ -220,21 +220,148 @@ img {
 
 /*Start of Services*/
 .services{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    width: 100%;
+
 }
-.services > h1{
+.title{
+    display: flex;
+    justify-content: center;
+  
+}
+.title> h1{
+ 
     font-family: 'Zilla Slab', serif;
     font-size: 40px;
     color: #1c4da1;
     padding-top: 10px;
-    text-align: center;
-}
-.main-content{
-    padding: 10px;
+    
 }
 
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.main > div{
+    width: 500px;
+}
+.process-card-list{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: #e6e6e6;
+    margin: 20px 10px;
+    border-radius: 9%;
+    padding: 1rem;
+}
+.process-card-header{
+    padding: 30px 0 20px 0;
+}
+.process-card-header > h3{
+    color: #1c4da1;
+    text-align: center;
+}
+.process-card-list > ul > li{
+    padding: 10px;
+   list-style: none;
+    text-align: justify;
+}
+/*End of Services*/
+
+
+/*Start of Contents*/
+/*Start of Offers*/
+
+.all-supports {
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+.title-header{
+    font-family: 'Zilla Slab', serif;
+    font-size: 30px;
+    color: #1c4da1;
+    padding-top: 10px;
+    text-align: center;
+}
+.content-main > div {
+    width: 400px;
+    padding: 20px;
+}
+.content-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.all-supports-card {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 10%;
+}
+
+.card-header-wrapper {
+    padding: 30px 0 20px 0;
+}
+
+.card-header-wrapper > h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.all-supports > li {
+    text-align: justify;
+    padding: 10px 75px 30px 75px;
+    font-size: 20px;
+}
+/*End of Offers*/
+
+.Accomplishment{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.Accomplishment > div{
+    width: 500px;
+}
+.card-header{
+    padding: 20px 0 20px 0;
+}
+.card-header > h2{
+    font-family: 'Zilla Slab', serif;
+    font-size: 35px;
+    color: #1c4da1;
+
+    text-align: center;
+}
+.overall-container{
+  
+}
+.overall-container > ul{
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 30px;
+    border-radius: 10%;
+    width: 500px;
+}
+.overall-container> ul > li{
+    list-style: none;
+    padding: 5px;
+}
 @media(max-width: 720px){
     .mini-nav{
         display: none;
