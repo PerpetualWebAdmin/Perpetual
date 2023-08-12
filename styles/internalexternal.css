@@ -326,6 +326,7 @@ img {
     font-size: 20px;
 }
 /*End of Offers*/
+
 /*Start of Accomplishment*/
 .Accomplishment{
     width: 100%;
@@ -380,11 +381,12 @@ img {
 
 /*Start of Accordion*/
 .faqs.active{
-    
+    overflow: none;
 }
 .faqs.active .arrow{
     transition: all 0.3s ease;
     transform: rotate(180deg);
+   
 }
 
 /*End of Accordion*/
@@ -395,6 +397,7 @@ img {
 .faq-header{
     display: flex;
     justify-content: space-between;
+    
 
 }
 .faq-header > h2{
@@ -423,7 +426,41 @@ span > a{
    
 }
 
+/*Start of Quality Objectives*/
+.Quality-Objectives{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.Quality-Objectives > div{
+    width: 500px;
+}
+.card-header{
+    padding: 20px 0 20px 35px;
+}
+.card-header > h2{
+    font-family: 'Zilla Slab', serif;
+    font-size: 35px;
+    color: #1c4da1;
 
+    text-align: center;
+}
+.container-qo > ul{
+    background-color: #e6e6e6;
+    padding: 30px;
+    border-radius: 10%;
+    width: 500px;
+    margin: 10px;
+}
+.container-qo > ul > li{
+    font-size: 18px;
+    list-style: none;
+    padding: 15px;
+}
+/*End of Accomplishment*/
 @media(max-width: 720px){
     .mini-nav{
         display: none;
