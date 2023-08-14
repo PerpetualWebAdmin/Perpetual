@@ -74,10 +74,11 @@ body{
 
 /*Start of Arrows*/
 .arrow{
-   transition: all 0.7s ease;
+   transition: all 0.7s ease-in-out;
 }
 input[type="checkbox"]:checked ~ .arrow{
     transform: rotate(180deg);
+
  
 }
 /*End of Arrows*/

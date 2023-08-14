@@ -367,64 +367,97 @@ img {
 .FAQ{
     width: 100%;
     background-color: #e6e6e6;
-    
 }
 .faqs{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: #e6e6e6;
+    flex-direction: column;
+    flex-wrap: wrap ;
     font-family: 'Zilla Slab', serif;
 }
 
 /*Start of Accordion*/
-.faqs.active{
-    overflow: none;
-}
-.faqs.active .arrow{
-    transition: all 0.3s ease;
-    transform: rotate(180deg);
-   
-}
 
+.faqs .container-main.active .faq-header{
+    background-color: #1c4da1;
+    color: white;
+}
+.faqs .container-main.active .faq-header i{
+    color: white;
+    transform: rotate(180deg);
+    transition: transform 0.6s 0.1s;
+}
+.faqs .container-main.active .faq-body{
+    display: block;
+}
 /*End of Accordion*/
 .faqs > div{
-    width: 830px;
+    width: 800px;
     margin: 10px 0;
+    flex: 1 1 0;
 }
+
+
 .faq-header{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ffc63e;
+    padding: 15px;
+    cursor: pointer;    
 
 }
 .faq-header > h2{
     font-size: 22px;
 }
-.container-main{
-    cursor: pointer;
+
+.faq-body > p{
     background-color: white;
+    border: 2px solid #ffc63e;
+    padding: 20px;
+    text-align: justify;
+    border-top: 0;
+    display: none;
+    animation: animeate 0.2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+
+@keyframes animate {
+    0%{
+        transform: scaleY(0);
+    }
+}
+.container-main{
+   
     border-radius: 10px;
     padding: 25px;
-    border: 2px solid #ffc63e;
+   
 }
 span > a{
     font-size: 20px;
     color: black;
     padding-left: 0.15rem;
 }
+.container-main > ul{
+    border: 2px solid #ffc63e;
+    border-top: 0;
+    display: none;
 
-.container-main > p{
-    padding-top: 20px;
-    text-align: justify;
 }
 .container-main > ul > li{
-   padding: 15px 0 10px 0;
+   padding: 20px 0 10px 0;
    list-style: none;
+   text-align: justify;
+   background-color: white;
+  
    
 }
+
+/*End of FAQ's*/
 
 /*Start of Quality Objectives*/
 .Quality-Objectives{
@@ -436,6 +469,7 @@ span > a{
    
 }
 .Quality-Objectives > div{
+   
     width: 500px;
 }
 .card-header{
@@ -462,6 +496,11 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
+
+    .faqs > div{
+        width: 400px;
+        margin: 10px 0;
+    }
     .mini-nav{
         display: none;
     }
