@@ -497,10 +497,8 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
-
-    .faqs > div{
-        width: 400px;
-        margin: 10px 0;
+    .Accomplishment > div{
+        width: 200px;
     }
     .mini-nav{
         display: none;
