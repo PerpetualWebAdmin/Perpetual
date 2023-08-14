@@ -3,7 +3,7 @@ let faq = document.querySelectorAll('.faqs .container-main');
 faq.forEach((accordion) =>{
 
     //new, pushing p
-    let x = accordion.querySelector('::scope .faq-body > p);
+    let x = accordion.querySelector('::scope .faq-body > p');
     let isActive = false;
     accordion.onclick = () =>{
 
