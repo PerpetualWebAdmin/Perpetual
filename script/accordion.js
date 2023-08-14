@@ -6,6 +6,6 @@ faq.forEach((accordion) =>{
             content.classList.remove('active');
         })
         accordion.classList.add('active');
-    }
+    };
   
-})
+});
