@@ -414,10 +414,6 @@ img {
     font-size: 22px;
 }
 
-.faq-body {
-    display: none;
-}
-
 .faq-body > p{
     background-color: white;
     border: 2px solid #ffc63e;
@@ -500,10 +496,8 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
-
-    .faqs > div{
-        width: 400px;
-        margin: 10px 0;
+    .Accomplishment > div{
+        width: 200px;
     }
     .mini-nav{
         display: none;
