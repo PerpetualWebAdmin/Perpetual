@@ -1,19 +1,39 @@
 let faq = document.querySelectorAll('.faqs .container-main');
 
-faq.forEach((accordion) =>{
+console.log('accordion script start');
 
-    //new, pushing p
-    let x = accordion.querySelector('::scope .faq-body > p');
-    let isActive = false;
+faq.forEach((accordion) =>{
+    
+    // new, pushing p
+    let x = accordion.querySelector(':scope .faq-body > p');
+    accordion.isActive = false;
+
     accordion.onclick = () =>{
 
-        isActive = isActive? false:true;
-        x.style.display = (isActive) ? 'none':'block';
+        console.log('before: ', accordion.isActive);
+
         faq.forEach((content) =>{
+
             content.classList.remove('active');
+
+            if(accordion === content) {
+                console.log('same obj');
+                return;
+            }
+            content.isActive = false;
+            
         })
-        if(!isActive){
-        accordion.classList.add('active');
+        
+        console.log(accordion.isActive);
+        console.log('flip',accordion.isActive? false:true);
+
+        accordion.isActive = accordion.isActive? false:true;
+
+
+        console.log('after: ',accordion.isActive); 
+
+        if(accordion.isActive){
+            accordion.classList.add('active');
         }
     };
   
