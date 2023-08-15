@@ -413,8 +413,8 @@ img {
 .faq-header > h2{
     font-size: 22px;
 }
-.faq-body{
-     display: none;
+.faq-body {
+    display: none;
 }
 .faq-body > p{
     background-color: white;
@@ -422,6 +422,7 @@ img {
     padding: 20px;
     text-align: justify;
     border-top: 0;
+    
     animation: animeate 0.2s linear backwards;
     line-height: 2;
     transform-origin: top;
