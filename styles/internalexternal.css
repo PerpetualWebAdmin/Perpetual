@@ -337,6 +337,10 @@ img {
    
 }
 .Accomplishment > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 500px;
 }
 .card-header{
@@ -348,6 +352,9 @@ img {
     color: #1c4da1;
 
     text-align: center;
+}
+.overall-container{
+
 }
 .overall-container > ul{
     text-align: center;
@@ -396,7 +403,7 @@ img {
 .faqs > div{
     width: 800px;
     margin: 10px 0;
-    flex: 1 1 0;
+
 }
 
 
@@ -450,11 +457,12 @@ span > a{
     display: none;
 
 }
-.container-main > ul > li{
-   padding: 20px 0 10px 0;
+.container-main > .faq-body> ul > li{
+   padding: 15px;
    list-style: none;
    text-align: justify;
    background-color: white;
+
   
    
 }
@@ -471,7 +479,10 @@ span > a{
    
 }
 .Quality-Objectives > div{
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 500px;
 }
 .card-header{
@@ -498,8 +509,8 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
-    .Accomplishment > div{
-        width: 200px;
+    .faqs > div{
+        width: 500px;
     }
     .mini-nav{
         display: none;
