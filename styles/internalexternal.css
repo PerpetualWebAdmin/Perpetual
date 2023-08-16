@@ -399,7 +399,7 @@ img {
 }
 /*End of Accordion*/
 .faqs > div{
-    width: 800px;
+    width: auto;
     margin: 10px 0;
 
 }
@@ -507,9 +507,7 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
-    .faqs > div{
-        width: 500px;
-    }
+  
     .mini-nav{
         display: none;
     }
