@@ -13,7 +13,7 @@ faq.forEach((accordion) =>{
         console.log('before: ', accordion.isActive);
 
         faq.forEach((content) =>{
-
+             
             content.classList.remove('active');
 
             if(accordion === content) {
