@@ -1,6 +1,219 @@
-img{
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap');
+
+
+/* set all image width to full device width */
+img {
     width: 100%;
 }
-.banner{
+
+.banner {
+    /* move banner down to avoid getting overlapped by the header */
     padding-top: 100px;
+}
+
+.mini-nav {
+    padding-left: 16px;
+}
+
+.mini-nav > ul{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    width: fit-content;
+    padding: 8px;
+}
+.mini-nav > ul >  li {
+    list-style: none;
+}
+.mini-nav > ul >  li > a{
+    text-decoration: none;
+    color: var(--default-back);
+    font-size: 12px;
+    
+    border: 1px black solid;
+    padding: 12px;
+    display: block;
+    border-radius: 16px;
+}
+
+.mini-nav > ul >  li> a:hover{
+    background-color: var(--default-back);
+    color: white;
+}
+/* flex container for overview for programs */
+.program-overview {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.program-overview > div {
+    flex: 1 1 0;
+    min-width: 300px;
+    margin: 1vw;
+}
+
+.text-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overview-header-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.overview-header-wrapper > h1 {
+    width: 100%;
+    color: white;
+    background-color: rgba(29, 81, 157, 1);
+    text-align: center;
+    font-size: 4vw;
+    padding: 20px 10px;
+}
+
+.text-overview > p{
+    padding-top: 2vw;
+    font-size: 16px;
+    
+}
+/*Learn More*/
+.learn-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.learn-more-container > a {
+    text-align: center;
+    color: #0400D7;
+    font-size: 16px;
+}
+/*Logo*/
+.program-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.program-logo-container > img {
+    max-width: 100%;
+    width: 250px;
+    object-fit: contain
+}
+/* end of overview */
+
+/* mission and vision area */
+.mission-vision {
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.mission-vision > div {
+    width: 450px;
+}
+
+.mission-vision-card {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    margin: 25px 10px;
+    border-radius: 10%;
+}
+
+.card-header-wrapper {
+    padding: 30px 0 20px 0;
+}
+
+.card-header-wrapper > h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.mission-vision-card > p {
+    padding: 10px 75px 30px 75px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+}
+/* end of mission and vision */
+
+/*Start of Research*/
+.Research{
+    width: 100%;
+}
+.title > h1{
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--default-back);
+    color: white;
+}
+.container-tabs{
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6e6e6;
+    flex-wrap: wrap;
+}
+.container-tabs > li{
+    list-style: none;
+}
+ 
+.all-tabs{
+  text-decoration: none;
+  color: black;
+}
+.all-tabs:hover{
+    color: #0400D7;
+}
+#Cas{
+    width: 100%;
+    background-color: #e6e6e6;
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    margin: 15px;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.table-title{
+    text-align: center;
+}
+/*End of Research*/
+
+.progress-bar{
+    z-index: -1;
+    top: 95px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: var(--default-6);
+}
+
+@media(max-width: 720px){
+    .mini-nav{
+        display: none;
+    }
+ 
 }
