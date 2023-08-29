@@ -1,5 +1,3 @@
 const allTabs = document.querySelectorAll('.all-tabs')
-const allContents = document.querySelectorAll('.contents');
-allTabs.forEach(() =>{
-    
-})
+const allContents = document.querySelectorAll('.main-contents');
+

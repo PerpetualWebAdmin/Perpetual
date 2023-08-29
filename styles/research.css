@@ -170,17 +170,25 @@ img {
 .container-tabs > li{
     list-style: none;
 }
- 
+
 .all-tabs{
   text-decoration: none;
   color: black;
+
 }
 .all-tabs:hover{
     color: #0400D7;
 }
-#Cas{
+#contents{
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: #e9e9e9;
+}
+.contents > h1{
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 table{
     display: flex;
@@ -196,6 +204,12 @@ th {
   padding: 10px 20px;
   font-size: 15px;
 }
+td > a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 .table-title{
     text-align: center;
 }
