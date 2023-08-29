@@ -337,7 +337,11 @@ img {
    
 }
 .Accomplishment > div{
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
 }
 .card-header{
     padding: 20px 0 20px 35px;
@@ -349,13 +353,14 @@ img {
 
     text-align: center;
 }
+
 .overall-container > ul{
     text-align: center;
     background-color: #e6e6e6;
     padding: 30px;
     border-radius: 10%;
-    width: 500px;
-    margin: 20px;
+    width: 80%;
+    
 }
 .overall-container> ul > li{
     list-style: none;
@@ -394,9 +399,9 @@ img {
 }
 /*End of Accordion*/
 .faqs > div{
-    width: 800px;
+    width: 80%;
     margin: 10px 0;
-    flex: 1 1 0;
+
 }
 
 
@@ -413,8 +418,8 @@ img {
 .faq-header > h2{
     font-size: 22px;
 }
-.faq-body{
-     display: none;
+.faq-body {
+    display: none;
 }
 .faq-body > p{
     background-color: white;
@@ -422,6 +427,7 @@ img {
     padding: 20px;
     text-align: justify;
     border-top: 0;
+    
     animation: animeate 0.2s linear backwards;
     line-height: 2;
     transform-origin: top;
@@ -449,11 +455,12 @@ span > a{
     display: none;
 
 }
-.container-main > ul > li{
-   padding: 20px 0 10px 0;
+.container-main > .faq-body> ul > li{
+   padding: 15px;
    list-style: none;
    text-align: justify;
    background-color: white;
+
   
    
 }
@@ -470,8 +477,11 @@ span > a{
    
 }
 .Quality-Objectives > div{
-   
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;    
 }
 .card-header{
     padding: 20px 0 20px 35px;
@@ -486,9 +496,9 @@ span > a{
 .container-qo > ul{
     background-color: #e6e6e6;
     padding: 30px;
-    border-radius: 10%;
-    width: 500px;
-    margin: 10px;
+    border-radius: 20px;
+    width: 80%  ;
+    
 }
 .container-qo > ul > li{
     font-size: 18px;
@@ -497,9 +507,7 @@ span > a{
 }
 /*End of Accomplishment*/
 @media(max-width: 720px){
-    .Accomplishment > div{
-        width: 200px;
-    }
+  
     .mini-nav{
         display: none;
     }
