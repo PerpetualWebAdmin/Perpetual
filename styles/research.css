@@ -179,10 +179,11 @@ img {
 .all-tabs:hover{
     color: #0400D7;
 }
-#contents{
+.contents{
     width: 100%;
     background-color: #e9e9e9;
 }
+
 .contents > h1{
     font-size: 30px;
     padding: 10px;
@@ -213,6 +214,8 @@ td > a{
 .table-title{
     text-align: center;
 }
+
+
 /*End of Research*/
 
 .progress-bar{

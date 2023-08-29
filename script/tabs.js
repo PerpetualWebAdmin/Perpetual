@@ -1,3 +1,4 @@
-const allTabs = document.querySelectorAll('.all-tabs')
-const allContents = document.querySelectorAll('.main-contents');
+const containerTabs = document.querySelectorAll('.container-tabs');
+const mainContents = document.querySelectorAll('.main-contents');
+
 
