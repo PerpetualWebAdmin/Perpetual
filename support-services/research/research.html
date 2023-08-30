@@ -240,17 +240,7 @@
         />
       </div>
 
-      <div class="mini-nav">
-        <ul>
-          <li><a href="#mission-vision">Mission And Vision</a></li>
-          <li><a href="#ccs-programs">Programs List</a></li>
-          <li><a href="#ccs-bsit">Information Technology</a></li>
-          <li><a href="#ccs-bscs">Computer Science</a></li>
-          <li><a href="#all-supports">All Supports</a></li>
-          <li><a href="#History">History</a></li>
-          <li><a href="#Facilities">Facilities</a></li>
-        </ul>
-      </div>
+  
 
       <section class="program-overview">
         <div class="text-overview">
@@ -323,26 +313,29 @@
           <h1>Researches By Department</h1>
         </div>
 
+        <div class="main-contents">
+
+        <div class="horizontal-scrolling">
         <ul class="container-tabs">
-          <li><a href="#Cas" class="all-tabs">Arts &amp; Science</a></li>
-          <li><a href="#Crim" class="all-tabs">Criminology</a></li>
-          <li><a href="#Grad" class="all-tabs">Graduate School</a></li>
-          <li>
-            <a href="#Busines" class="all-tabs">Business &amp; Accountancy</a>
+          <li ><a href="#Cas" class="all-tabs" data-tab-target="#Cas">Arts &amp; Science</a></li>
+          <li ><a href="#Crim" class="all-tabs" data-tab-target="#Crim">Criminology</a></li>
+          <li ><a href="#Grad" class="all-tabs" data-tab-target="#Grad">Graduate School</a></li>
+          <li >
+            <a href="#Business" class="all-tabs" data-tab-target="#Business">Business &amp; Accountancy</a>
           </li>
-          <li><a href="#Educ" class="all-tabs">Education</a></li>
+          <li><a href="#Educ" class="all-tabs" data-tab-target="#Educ">Education</a></li>
           <li>
-            <a href="#Hospitality" class="all-tabs"
+            <a href="#Hospitality" class="all-tabs" data-tab-target="#Hospitality"
               >Int'l Hospitality Management</a
             >
           </li>
-          <li><a href="#CCS" class="all-tabs">Computer Studies</a></li>
-          <li><a href="#Engineering" class="all-tabs">Engineering</a></li>
-          <li><a href="#Maritime" class="all-tabs">Maritime</a></li>
+          <li><a href="#CCS" class="all-tabs" data-tab-target="#CCS">Computer Studies</a></li>
+          <li><a href="#Engineering" class="all-tabs" data-tab-target="#Engineering">Engineering</a></li>
+          <li><a href="#Maritime" class="all-tabs" data-tab-target="#Maritime">Maritime</a></li>
         </ul>
-
-        <div class="main-contents">
-          <div class="contents" id="Cas" >
+      </div>
+   
+          <div class="contents active" id="Cas" data-tab-content >
             <h1>College of Arts &amp; Science Research</h1>
             <table>
               <tr>
@@ -563,7 +556,7 @@
             </table>
           </div>
 
-          <div class="contents" id="Crim" >
+          <div class="contents" id="Crim" data-tab-content>
             <h1>College of Criminology Research</h1>
 
             <table>
@@ -596,7 +589,7 @@
               </tr>
             </table>
           </div>
-          <div class="contents" id="Grad" >
+          <div class="contents" id="Grad" data-tab-content>
             <h1>Graduate School Research</h1>
 
             <table>
@@ -693,7 +686,7 @@
               </tr>
             </table>
           </div>
-          <div class="contents" id="Business" >
+          <div class="contents" id="Business" data-tab-content>
             <h1>College of Business &amp; Accountancy Research</h1>
             <table>
               <tr>
@@ -737,7 +730,7 @@
             </table>
           </div>
 
-          <div class="contents" id="Educ" >
+          <div class="contents" id="Educ" data-tab-content>
             <h1>College of Education Research</h1>
             <table>
               <tr>
@@ -805,7 +798,7 @@
             </table>
           </div>
 
-          <div class="contents" id="Hospitality" >
+          <div class="contents" id="Hospitality" data-tab-content>
             <h1>College of International Hospitality &amp; Management</h1>
             <table>
               <tr>
@@ -866,7 +859,7 @@
             </table>
           </div>
 
-          <div class="contents" id="CCS">
+          <div class="contents" id="CCS" data-tab-content>
             <h1>College of Computer Studies Research</h1>
             <table>
               <tr>
@@ -968,7 +961,7 @@
             </table>
           </div>
 
-          <div class="contents" id="Engineering">
+          <div class="contents" id="Engineering" data-tab-content>
             <h1>College of Engineering Research</h1>
             <table>
               <tr>
@@ -1082,7 +1075,7 @@
             </table>
           </div>
 
-          <div class="contents" id="Maritime">
+          <div class="contents" id="Maritime" data-tab-content>
             <h1>College of Maritime Research</h1>
             <table>
               <tr>
@@ -1121,7 +1114,10 @@
               
             </table>
           </div>
+
         </div>
+
+        
       </section>
 
       <!-- footer -->
