@@ -360,7 +360,7 @@ img {
     padding: 30px;
     border-radius: 10%;
     width: 80%;
-    
+    margin: 1rem;
 }
 .overall-container> ul > li{
     list-style: none;
