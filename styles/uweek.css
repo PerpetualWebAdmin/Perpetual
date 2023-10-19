@@ -1,0 +1,40 @@
+.horizontal-scrolling {
+    overflow-x: scroll;
+    background-color: #e9e9e9;
+  }
+  .horizontal-scrolling.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+  .horizontal-scrolling::-webkit-scrollbar {
+    display: none;
+  }
+.container-tabs {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .container-tabs > li {
+    list-style: none;
+    padding: 10px;
+ 
+  }
+  [data-tab-content] {
+    display: none;
+  }
+  .active[data-tab-content] {
+    display: block;
+  }
+  .all-tabs {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .all-tabs.active {
+    background-color: gray;
+    border-radius: 10px;
+  }
