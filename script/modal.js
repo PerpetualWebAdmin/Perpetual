@@ -19,23 +19,32 @@ imgs.forEach((e,index) =>{
         }else{
             modalTitle.innerHTML = n.target.alt;
         }
+
+        e.style.display = "block";
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100%";
     })
 })
 
 
 hiddenImgs.addEventListener('click', () =>{
     openImgs.classList.remove('active');
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
 })
 closeModal.addEventListener('click', () =>{
     openImgs.classList.remove('active');
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
 })
-
 
 
 window.addEventListener('keydown', function(event){
     if(event.key === 'Escape'){
         openImgs.classList.remove('active');
     }
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
 } )
 //Buttons
 
