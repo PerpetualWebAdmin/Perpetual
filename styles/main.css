@@ -276,6 +276,7 @@ input[type="checkbox"]:checked ~ .arrow {
   padding-left: 1rem;
 }
 
+
 .newup-list {
   list-style: none;
 }
@@ -294,7 +295,8 @@ input[type="checkbox"]:checked ~ .arrow {
   text-align: center;
 }
 .newup-contents {
-  padding-top: 1rem;
+
+  padding: 1rem;
   text-align: justify;
   font-size: 15px;
 }
@@ -484,7 +486,7 @@ input[type="checkbox"]:checked ~ .arrow {
 
 .footer-copyright {
   color: #496eb3;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   text-align: center;
   margin-top: 50px;
 }
