@@ -217,7 +217,21 @@ img {
     transition: 0.25s;
     background-color: #ffc63e;
 }
-
+.more-news{
+    margin: 10px;
+    padding: 10px;
+}
+.more-news > a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+.more-news > a:hover{
+    background-color: #ffc63e;
+    color: #1c4da1;
+}
 /*Start of Services*/
 .services{
     width: 100%;
@@ -460,9 +474,6 @@ span > a{
    list-style: none;
    text-align: justify;
    background-color: white;
-
-  
-   
 }
 
 /*End of FAQ's*/
