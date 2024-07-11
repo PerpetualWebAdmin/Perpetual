@@ -39,14 +39,11 @@ body {
 }
 .navlist {
   list-style: none;
+  display: inline-flex;
 }
 .navlist li {
-  display: inline-block;
+  list-style: none;
   padding: 10px;
-}
-
-.navbar input[type="checkbox"] {
-  display: none;
 }
 
 .navbar label,
@@ -59,71 +56,33 @@ body {
 .navbar ul li {
   position: relative;
   padding: 9px;
+  z-index: 10;
 }
 .navbar label:hover,
-.navbar a:hover {
+.navbar a:hover,
+.nav-item[data-toggle="on"] > label {
   color: #ffc63e;
 }
-.navbar input[type="checkbox"]:checked + label {
-  color: #ffc63e;
-}
-
-/* hide other menus - to fit the submenu */
-.nav-item.inactive {
+.nav-item[data-active="false"] > .progsub{
   display: none;
 }
 
-/*Start of Arrows*/
-.arrow {
-  transition: all 0.7s ease-in-out;
-}
-input[type="checkbox"]:checked ~ .arrow {
-  transform: rotate(180deg);
-}
-/*End of Arrows*/
-
-/*Start of Progress Sub*/
 .progsub {
-  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: var(--default-back);
+  top: 100%;
+  width: 200px;
 }
-
-.progsub ul {
+.progsub li::after {
+  content: "";
   display: block;
-  margin: 5px;
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  z-index: 10;
 }
-.progsub ul li {
-  width: 170px;
-  padding: 10px;
-  border-bottom: 1px solid white;
-}
-
-/*Start of Basic Education*/
-.progsub-bsed {
-  display: none;
-}
-
-/*End of Basic Education*/
-
-/*End of Progress Sub*/
-
-/*Start of About Sub*/
-.abtsub {
-  display: none;
-}
-/*End of About Sub*/
-
-/*Start of Online Services*/
-.olssub {
-  display: none;
-}
-/*End of About Sub*/
-
-/*Start of Support Services Sub*/
-.supsersub {
-  display: none;
-}
-
-/*End of Support Services Sub*/
 
 /*Start of Enroll Now*/
 .enrlnw {
@@ -275,7 +234,6 @@ input[type="checkbox"]:checked ~ .arrow {
   padding-left: 1rem;
 }
 
-
 .newup-list {
   list-style: none;
 }
@@ -294,7 +252,6 @@ input[type="checkbox"]:checked ~ .arrow {
   text-align: center;
 }
 .newup-contents {
-
   padding: 1rem;
   text-align: justify;
   font-size: 15px;
@@ -548,7 +505,7 @@ input[type="checkbox"]:checked ~ .arrow {
     display: block;
     z-index: 2;
   }
-  .navham.active .bar:nth-child(2) {  
+  .navham.active .bar:nth-child(2) {
     opacity: 0;
   }
   .navham.active .bar:nth-child(1) {
