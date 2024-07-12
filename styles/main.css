@@ -71,6 +71,7 @@ header {
 }
 .nav-item[data-active="false"] > .progsub {
   display: none;
+  
 }
 
 .progsub {
@@ -79,6 +80,18 @@ header {
   background-color: var(--default-back);
   top: 100%;
   width: 200px;
+  animation: subdrop .1s ease-in;
+}
+
+@keyframes subdrop {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
 }
 .progsub li::after {
   content: "";
