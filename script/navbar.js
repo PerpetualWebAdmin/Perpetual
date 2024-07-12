@@ -41,7 +41,7 @@ document.addEventListener("click", (e) => {
   if (!e.target.closest(".nav-item"))
     navlist.setAttribute("data-active-index", "");
 
-  refresh()
+  refresh();
 });
 
 const refresh = () => {
