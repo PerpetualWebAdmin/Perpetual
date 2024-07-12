@@ -38,10 +38,29 @@ navlist.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (!e.target.closest(".nav-item"))
+  if (!e.target.closest(".nav-item")) {
     navlist.setAttribute("data-active-index", "");
-
+    navsub.setAttribute("data-active", "false");
+  }
   refresh();
+});
+
+const navsub = document.querySelector(".nav-sub-item");
+navsub.addEventListener("mouseover", (e) => {
+  try {
+    navsub.setAttribute("data-hover", "true");
+  } catch (error) {}
+});
+navsub.addEventListener("mouseleave", (e) => {
+  try {
+    navsub.setAttribute("data-hover", "false");
+  } catch (error) {}
+});
+
+navsub.addEventListener("click", (e) => {
+  let active = navsub.getAttribute("data-active");
+  active = active == "true" ? "false" : "true";
+  navsub.setAttribute("data-active", active);
 });
 
 const refresh = () => {

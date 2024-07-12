@@ -66,12 +66,19 @@ header {
 }
 .navbar label:hover,
 .navbar a:hover,
-.nav-item[data-toggle="on"] > label {
+.nav-item[data-toggle="on"] > label,
+.nav-sub-item[data-active="true"] > label {
   color: #ffc63e;
 }
-.nav-item[data-active="false"] > .progsub {
+.nav-item:not([data-active="true"]) > .progsub {
   display: none;
-  
+}
+
+.nav-sub-item:not([data-active="true"]) > .progsub {
+  display: none;
+}
+.nav-sub-item[data-hover="true"] > .progsub {
+  display: block;
 }
 
 .progsub {
@@ -81,6 +88,11 @@ header {
   top: 100%;
   width: 200px;
   animation: subdrop .1s ease-in;
+}
+
+.sub-right {
+  left: 100%;
+  top: 0%;
 }
 
 @keyframes subdrop {
