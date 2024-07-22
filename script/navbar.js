@@ -1,5 +1,6 @@
 //Navigation Bar
 const navlist = document.querySelector(".navlist");
+const navitem = document.querySelectorAll(".nav-item");
 navlist.querySelectorAll(":scope > .nav-item").forEach((item, index) => {
   item.setAttribute("data-index", index);
   item.setAttribute("data-hover", "false");
@@ -54,7 +55,9 @@ navsub.addEventListener("mouseover", (e) => {
 navsub.addEventListener("mouseleave", (e) => {
   try {
     navsub.setAttribute("data-hover", "false");
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 navsub.addEventListener("click", (e) => {
@@ -63,6 +66,16 @@ navsub.addEventListener("click", (e) => {
   navsub.setAttribute("data-active", active);
 });
 
+//Navham
+const navham = document.querySelector(".navham");
+
+navham.addEventListener("click", () => {
+  navham.classList.toggle("active");
+  navlist.classList.add("active");
+});
+
+
+//Refresh
 const refresh = () => {
   let active_index = navlist.getAttribute("data-active-index");
   navlist.querySelectorAll(".nav-item").forEach((item) => {
