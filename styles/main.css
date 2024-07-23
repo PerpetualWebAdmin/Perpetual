@@ -562,18 +562,23 @@ header {
     flex-direction: column;
     opacity: 1;
     position: fixed;
-    top: -100%;
+  
+    right: -50%;
     background-color: #1c4da1;
-    width: 100%;
+    width: 40%;
+    height: 100%;
     text-align: center;
     transition: 0.3s;
     z-index: 0;
+   
   }
   .nav-item {
-    margin: 16px 10px;
+    margin: 10px 10px;
   }
   .navlist.active {
-    top: 99px;
+    top: 100px;
+    right: 0px;
+    padding: 0px;
   }
 
   .navlogo {
