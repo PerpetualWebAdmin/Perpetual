@@ -539,7 +539,7 @@ header {
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1265px) {
   /*Start of Hamburger Menu*/
   .navham {
     display: block;
@@ -562,7 +562,6 @@ header {
     flex-direction: column;
     opacity: 1;
     position: fixed;
-  
     right: -50%;
     background-color: #1c4da1;
     width: 40%;
@@ -570,7 +569,6 @@ header {
     text-align: center;
     transition: 0.3s;
     z-index: 0;
-   
   }
   .nav-item {
     margin: 10px 10px;
