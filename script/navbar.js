@@ -1,6 +1,7 @@
 //Navigation Bar
 const navlist = document.querySelector(".navlist");
 const navitem = document.querySelectorAll(".nav-item");
+
 navlist.querySelectorAll(":scope > .nav-item").forEach((item, index) => {
   item.setAttribute("data-index", index);
   item.setAttribute("data-hover", "false");
@@ -68,12 +69,19 @@ navsub.addEventListener("click", (e) => {
 
 //Navham
 const navham = document.querySelector(".navham");
+const navlink = document.querySelectorAll(".nav-link");
 
 navham.addEventListener("click", () => {
   navham.classList.toggle("active");
-  navlist.classList.add("active");
+  navlist.classList.toggle("active");
 });
 
+navlink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navlist.classList.remove("active");
+    navham.classList.remove("active");
+  });
+});
 
 //Refresh
 const refresh = () => {

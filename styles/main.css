@@ -569,12 +569,13 @@ header {
     text-align: center;
     transition: 0.3s;
     z-index: 0;
+    top: 100px;
   }
   .nav-item {
     margin: 10px 10px;
   }
   .navlist.active {
-    top: 100px;
+    
     right: 0px;
     padding: 0px;
   }
