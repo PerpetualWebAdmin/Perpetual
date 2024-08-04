@@ -8,6 +8,7 @@ navlist.querySelectorAll(":scope > .nav-item").forEach((item, index) => {
 });
 
 navlist.addEventListener("mouseover", (e) => {
+  if(window.innerWidth <= 768) return;
   try {
     navlist.querySelectorAll(":scope > .nav-item").forEach((item) => {
       item.setAttribute("data-hover", "false");
