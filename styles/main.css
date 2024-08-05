@@ -573,6 +573,7 @@ header {
   }
   .nav-item {
     margin: 10px 10px;
+    flex-direction: column;
   }
   .navlist.active {
     
