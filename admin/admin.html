@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/admin.css">
-</head>
+    <link rel="stylesheet" href="/styles/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<header>
-
-
-</header>
-<body>
-
+  <header></header>
+  <body>
     <section class="admin-panel">
-        <form action="" style="display: flex;
-        flex-direction: column;">
-            <input type="file" name="" id="">
-            <input type="text" name="" id="">
-            <textarea name="" id=""></textarea>
-            <button>Submit</button>
-        </form>
+      <form classname="form">
+        <input type="text" name="" id="" class="texts" />
+        <div class="text-area">
+          <div class="buttons">
+            <i class="fa-solid fa-bold"></i>
+            <i class="fa-solid fa-italic"></i>
+            <i class="fa-solid fa-underline"></i>
+
+            <select name="" id="">
+                <option value="">20</option>
+            </select>
+            <select name="" id="">
+                <option value="">Black</option>
+                <option value=""></option>
+            </select>
+        </div>
+         
+          <textarea name="" id=""></textarea>
+        </div>
+        <input type="file" name="" id="" accept=".png, .jpg" />
+        <button class="btns">Submit</button>
+      </form>
     </section>
-</body>
+
+    <!-- <div class="trial">
+        <p class="trys"></p>
+    </div> -->
+
+    <script src="/admin/panel.js"></script>
+  </body>
 </html>

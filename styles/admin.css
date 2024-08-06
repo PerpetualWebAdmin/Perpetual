@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.value1{
+    background-color: red;
+    color: red;
+}
+.value2{
+    background-color: black;
+}
+.texts{
+    width: 50%;
+    margin-bottom:10px;
+}
+textarea {
+  resize: none;
+  width: 50%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.btns {
+  width: 50%;
+  margin-top: 10px;
+}
