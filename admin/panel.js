@@ -2,6 +2,8 @@ const form = document.querySelector("form");
 const input = document.querySelector(".title");
 const textarea = document.querySelector("textarea");
 const trials = document.querySelector(".trials");
+const fileUpload = document.querySelector('input[type="file"]')
+
 
 function AddAnnouncement() {
   const newTitle = input.value;
@@ -12,6 +14,9 @@ function AddAnnouncement() {
   const divElem = document.createElement("div");
   divElem.classList.add("trial");
 
+  const imgElem = document.createElement('img');
+  imgElem.classList.add()
+  
   const h1Elem = document.createElement("h1");
   h1Elem.classList.add("titles");
   h1Elem.innerText = newTitle;
