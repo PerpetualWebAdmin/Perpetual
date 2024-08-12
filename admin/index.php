@@ -1,4 +1,8 @@
 <?php
+  if(key_exists('PATH_INFO', $_SERVER)){
+    http_response_code(404);
+    return;
+  }
     include "dbconnect.php";
 ?>  
 <!DOCTYPE html>
