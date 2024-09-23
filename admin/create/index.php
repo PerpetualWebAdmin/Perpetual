@@ -5,8 +5,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
         return;
     }
 
-
-    $view = "view.html";
+    $view = "index.html";
     if(file_exists($view)) {
         echo file_get_contents($view);
     } else {
