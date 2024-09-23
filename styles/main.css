@@ -243,6 +243,9 @@ input[type="checkbox"]:checked ~ .arrow {
   font-size: 30px;
   color: #001a2e;
 }
+/* End of Scroll to Top */
+
+
 
 /*Start of News and Updates Section*/
 .Newups {
@@ -490,6 +493,9 @@ input[type="checkbox"]:checked ~ .arrow {
   margin-top: 50px;
 }
 
+.counter{
+  width: 100px;
+}
 /*End of Footer Section*/
 
 /*All Media Query*/
