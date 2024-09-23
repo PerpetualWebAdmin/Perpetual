@@ -21,7 +21,7 @@
     />
     <title>University of Perpetual Help System - Laguna</title>
     <link rel="icon" type="x-icon" href="img/SSS.png" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
