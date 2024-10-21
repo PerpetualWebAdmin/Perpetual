@@ -83,6 +83,18 @@ body {
   font-size: 1.5em;
   color: white;
 }
+
+.btns-link{
+  background-color: #1c4da1;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.btns-link:hover{
+  color: #ffc63e;
+}
 /*End of School Automate Images*/
 @media (max-width: 720px) {
   .school-automate-desc {

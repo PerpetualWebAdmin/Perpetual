@@ -1,7 +1,7 @@
 :root {
   --default-back: #1c4da1;
   --default-2: #143980;
-  --default-3: #527bbd;
+  --default-3: #527bbde7;
   --default-4: #c4daf1;
   --default-5: #e0b03c;
   --default-6: #ffc63e;
@@ -20,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
   padding: 50px;
 }
 .img > img {
