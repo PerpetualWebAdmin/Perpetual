@@ -1,0 +1,57 @@
+:root {
+  --default-back: #1c4da1;
+  --default-2: #143980;
+  --default-3: #527bbd;
+  --default-4: #c4daf1;
+  --default-5: #e0b03c;
+  --default-6: #ffc63e;
+  --default-7: #ffe18b;
+  --default-8: #f9eed3;
+}
+
+.shengwei-title {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--default-back);
+}
+
+.main-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 50px;
+}
+.img > img {
+  width: 500px;
+}
+.content > p {
+  padding: 15px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.a-btn {
+  display: grid;
+  place-content: center;
+  padding: 10px;
+}
+.a-btn > a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  border: 1px solid black;
+}
+.a-btn> a:hover {
+  background-color: var(--default-2);
+  color: var(--default-7);
+}
+
+@media (width < 700px) {
+  .main-contents {
+    flex-wrap: wrap;
+  }
+  .img > img {
+    width: 400px;
+  }
+}
