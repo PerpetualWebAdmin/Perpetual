@@ -46,6 +46,8 @@
   color: var(--default-7);
 }
 
+
+
 @media (width < 700px) {
   .main-contents {
     flex-wrap: wrap;

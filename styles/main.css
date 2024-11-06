@@ -323,7 +323,22 @@ input[type="checkbox"]:checked ~ .arrow {
   background-color: var(--default-6);
 }
 /*End of Card List*/
+.viewall-btn{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.all-btns{
+  padding: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: var(--default-2);
+  color: whitesmoke;
+}
 
+.all-btns:hover{
+  color: var(--default-6);
+}
 /*End of News and Update Section*/
 
 /*Start of Campuses Section*/
