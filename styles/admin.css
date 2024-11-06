@@ -1,0 +1,48 @@
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.value1{
+    background-color: red;
+    color: red;
+}
+.value2{
+    background-color: black;
+}
+.texts{
+    width: 50%;
+    margin-bottom:10px;
+}
+.text-menus{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 5px;
+}
+textarea {
+  resize: none;
+  width: 50%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.btns {
+  width: 50%;
+  margin-top: 10px;
+}
+.trial{
+  display: flex;
+
+}
+.titles{
+  margin-left: 1rem;
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+
+
+}

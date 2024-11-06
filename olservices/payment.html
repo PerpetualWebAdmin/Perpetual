@@ -34,42 +34,41 @@
       <nav class="navbar">
         <!--Start of Navigation Logo-->
         <div class="navlogo">
+
           <a href="/index.html">
-            <img src="/img/Logos/white.png" alt="Perpetual Logo" class="perpslogo"
-          /></a>
+            <img src="/img/Logos/white.png" alt="Perpetual Logo" class="perpslogo"/></a>
         </div>
         <!--End of Navigation Logo-->
         <div class="hitbox"></div>
 
-        <ul class="navlist" tabindex="0">
-          <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+        <ul class="navlist" data-active-index="" tabindex="0">
+          <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
 
           <!--Start of Program SubMenu-->
-          <li class="nav-item">
-            <input type="checkbox" id="programs-checkbox" />
+          <li class="nav-item" data-active="false">
             <label for="programs-checkbox">Programs</label>
             <i class="fa-solid fa-caret-down arrow prog-arrow"></i>
             <!--Start of Basic Education-->
             <div class="progsub">
               <ul>
-                <li class="nav-link noHide">
-                  <a href="#"
+                <li class="nav-sub-item" data-active="false" data-hover="false" data-toggle="off">
+                  <label
                     >Basic Education
                     <i class="fa-solid fa-caret-down arrow bsed-arrow"></i
-                  ></a>
-                  <div class="progsub-bsed">
+                  ></label>
+                  <div class="progsub sub-right">
                     <ul>
-                      <li class="bsced">
+                      <li>
                         <a href="https://uphsl.edu.ph/shs/index.htm"
                           >Senior High School</a
                         >
                       </li>
-                      <li class="bsced">
+                      <li>
                         <a href="https://uphsl.edu.ph/jhs/index.htm"
                           >Junior High School</a
                         >
                       </li>
-                      <li class="bsced">
+                      <li>
                         <a href="https://uphsl.edu.ph/gradeschool/index.htm"
                           >Grade School</a
                         >
@@ -140,16 +139,14 @@
           <!--End of Program SubMenu-->
 
           <!--Start of Online Services SubMenu-->
-          <li class="nav-item">
-            <input type="checkbox" id="onlineServices-checkbox" />
+          <li class="nav-item" data-active="false">
             <label for="onlineServices-checkbox">Online Services</label>
             <i class="fa-solid fa-caret-down arrow ols-arrow"></i>
-            <div class="olssub">
+            <div class="progsub">
               <ul>
                 <li>
-                  <a href="/olservices/gti.html" class="nav-link"
-                    >SIAS/Online Grades</a
-                  >
+                  <a href="/olservices/gti.html" class="nav-link">SIAS/Online Grades</a>
+
                 </li>
                 <li>
                   <a href="/olservices/gti.html" class="nav-link">Moodle</a>
@@ -177,10 +174,9 @@
 
           <!--Start of Support Services SubMenu-->
           <li class="nav-item">
-            <input type="checkbox" id="supportServices-checkbox" />
             <label for="supportServices-checkbox">Support Services</label>
             <i class="fa-solid fa-caret-down arrow supser-arrow"></i>
-            <div class="supsersub">
+            <div class="progsub">
               <ul>
                 <li>
                   <a
@@ -243,10 +239,9 @@
 
           <!--Start of About SubMenu-->
           <li class="nav-item">
-            <input type="checkbox" id="about-checkbox" />
             <label for="about-checkbox">About</label>
             <i class="fa-solid fa-caret-down arrow abt-arrow"></i>
-            <div class="abtsub">
+            <div class="progsub">
               <ul>
                 <li>
                   <a href="/about/about.html" class="nav-link">About Us</a>
@@ -276,11 +271,11 @@
             </div>
           </li>
 
+          <!-- Calendar -->
           <li class="nav-item">
-            <input type="checkbox" id="calendar-checkbox" />
             <label for="calendar-checkbox">Calendar</label>
             <i class="fa-solid fa-caret-down arrow supser-arrow"></i>
-            <div class="supsersub">
+            <div class="progsub">
               <ul>
                 <li>
                   <a
@@ -305,7 +300,7 @@
               href="https://docs.google.com/forms/d/e/1FAIpQLSdx5SjvdftRXbNyjM5rvq83T90XBtdECekIPb8Hn6JipjDQlA/viewform"
               class="enrlnw"
               target="_blank"
-              ><span class="navenrl">Enroll Now</span>
+              ><span class="navenrl">Enroll&nbsp;Now</span>
             </a>
           </li>
         </ul>

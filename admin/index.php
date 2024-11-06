@@ -1,3 +1,10 @@
+<?php
+  if(key_exists('PATH_INFO', $_SERVER)){
+    http_response_code(404);
+    return;
+  }
+    include "dbconnect.php";
+?>  
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +21,7 @@
     />
     <title>University of Perpetual Help System - Laguna</title>
     <link rel="icon" type="x-icon" href="img/SSS.png" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,51 +36,48 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <header>
       <!--Start of Navigation Bar-->
       <nav class="navbar">
         <!--Start of Navigation Logo-->
         <div class="navlogo">
-          <a href="/index.html">
-            <img
-              src="/img/Logos/white.png"
-              alt="Perpetual Logo"
-              class="perpslogo"
+          <a href="#Home">
+            <img src="img/log1.png" alt="Perpetual Logo" class="perpslogo"
           /></a>
         </div>
         <!--End of Navigation Logo-->
         <div class="hitbox"></div>
 
-        <ul class="navlist" data-active-index="" tabindex="0">
+        <ul class="navlist">
           <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
 
           <!--Start of Program SubMenu-->
-          <li class="nav-item" data-active="false">
+          <li class="nav-item">
+            <input type="checkbox" id="programs-checkbox" />
             <label for="programs-checkbox">Programs</label>
             <i class="fa-solid fa-caret-down arrow prog-arrow"></i>
             <!--Start of Basic Education-->
             <div class="progsub">
               <ul>
-                <li class="nav-sub-item" data-active="false" data-hover="false" data-toggle="off">
-                  <label
+                <li class="nav-link noHide">
+                  <a href="#"
                     >Basic Education
                     <i class="fa-solid fa-caret-down arrow bsed-arrow"></i
-                  ></label>
-                  <div class="progsub sub-right">
+                  ></a>
+                  <div class="progsub-bsed">
                     <ul>
-                      <li>
+                      <li class="bsced">
                         <a href="https://uphsl.edu.ph/shs/index.htm"
                           >Senior High School</a
                         >
                       </li>
-                      <li>
+                      <li class="bsced">
                         <a href="https://uphsl.edu.ph/jhs/index.htm"
                           >Junior High School</a
                         >
                       </li>
-                      <li>
+                      <li class="bsced">
                         <a href="https://uphsl.edu.ph/gradeschool/index.htm"
                           >Grade School</a
                         >
@@ -83,46 +87,42 @@
                 </li>
 
                 <li>
-                  <a href="/programs/aviation/aviation.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/aviation/" class="nav-link"
                     >Aviation</a
                   >
                 </li>
                 <li>
-                  <a href="/programs/cas/cas.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/cas/" class="nav-link"
                     >Arts &amp; Sciences</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="/programs/business-accountancy/ba.html"
-                    class="nav-link"
-                    >Business&nbsp;&amp;&nbsp;Accountancy</a
+                  <a href="https://uphsl.edu.ph/cba/" class="nav-link"
+                    >Business &amp; Accountancy</a
                   >
                 </li>
                 <li>
-                  <a href="/programs/ccs/ccs.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/ccs/" class="nav-link"
                     >Computer Studies</a
                   >
                 </li>
                 <li>
-                  <a href="/programs/criminology/crim.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/crim/" class="nav-link"
                     >Criminology</a
                   >
                 </li>
                 <li>
-                  <a href="/programs/education/education.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/educ/" class="nav-link"
                     >Education</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="/programs/engineering/engineering.html"
-                    class="nav-link"
+                  <a href="https://uphsl.edu.ph/eng/" class="nav-link"
                     >Engineering &amp; Architecture</a
                   >
                 </li>
                 <li>
-                  <a href="/programs/hospitality/cihm.html" class="nav-link"
+                  <a href="https://uphsl.edu.ph/cihm/" class="nav-link"
                     >Int'l Hospitality Management</a
                   >
                 </li>
@@ -148,14 +148,15 @@
           <!--End of Program SubMenu-->
 
           <!--Start of Online Services SubMenu-->
-          <li class="nav-item" data-active="false">
+          <li class="nav-item">
+            <input type="checkbox" id="onlineServices-checkbox" />
             <label for="onlineServices-checkbox">Online Services</label>
             <i class="fa-solid fa-caret-down arrow ols-arrow"></i>
-            <div class="progsub">
+            <div class="olssub">
               <ul>
                 <li>
                   <a href="/olservices/gti.html" class="nav-link"
-                    >SIAS/Online Grades</a
+                    >GTI/Online Grades</a
                   >
                 </li>
                 <li>
@@ -184,9 +185,10 @@
 
           <!--Start of Support Services SubMenu-->
           <li class="nav-item">
+            <input type="checkbox" id="supportServices-checkbox" />
             <label for="supportServices-checkbox">Support Services</label>
             <i class="fa-solid fa-caret-down arrow supser-arrow"></i>
-            <div class="progsub">
+            <div class="supsersub">
               <ul>
                 <li>
                   <a
@@ -249,9 +251,10 @@
 
           <!--Start of About SubMenu-->
           <li class="nav-item">
+            <input type="checkbox" id="about-checkbox" />
             <label for="about-checkbox">About</label>
             <i class="fa-solid fa-caret-down arrow abt-arrow"></i>
-            <div class="progsub">
+            <div class="abtsub">
               <ul>
                 <li>
                   <a href="/about/about.html" class="nav-link">About Us</a>
@@ -281,11 +284,11 @@
             </div>
           </li>
 
-          <!-- Calendar -->
           <li class="nav-item">
+            <input type="checkbox" id="calendar-checkbox" />
             <label for="calendar-checkbox">Calendar</label>
             <i class="fa-solid fa-caret-down arrow supser-arrow"></i>
-            <div class="progsub">
+            <div class="supsersub">
               <ul>
                 <li>
                   <a
@@ -307,10 +310,10 @@
           <!--End of About SubMenu-->
           <li class="nav-item">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdx5SjvdftRXbNyjM5rvq83T90XBtdECekIPb8Hn6JipjDQlA/viewform"
+              href="https://sias.uphsl.edu.ph/"
               class="enrlnw"
               target="_blank"
-              ><span class="navenrl">Enroll&nbsp;Now</span>
+              ><span class="navenrl">Enroll Now</span>
             </a>
           </li>
         </ul>
@@ -339,8 +342,6 @@
       </section>
       <!--End of Home Page-->
 
-      <div style="height: 50dvw;"></div>
-
       <!--Start of News and Updates Page-->
       <section class="Newups" id="Newups">
         <h1 class="newuph">News &amp; Updates</h1>
@@ -366,59 +367,43 @@
             </svg>
           </span>
         </div>
-
         <div class="newup-grid">
           <!--Start of Card Images-->
+          
+          
+          
+<!-- inserted by nod, auto fill from database -->          
+<?php
+    $sql = "select * from newsupdate order by id desc";	   
+    $result = mysqli_query($con, $sql);
+    while ($r=mysqli_fetch_array($result)) {
+    ?>
           <div class="newup-card">
             <div class="newup-image-2">
               <img
-                src="News-Updates/img/2024/University Week.jpg"
-                alt="Annoucement"
+                src="NewsUpdate/images/<?php echo $r["imagename"];?>"
+                alt=""
                 class="newupimg2"
               />
             </div>
 
-            <h3 class="newuptitle">University Week 2024</h3>
+            <h3 class="newuptitle"></h3>
             <p class="newup-contents">
-              All the Scores of the Game in University Week 2024
+              <?php echo $r["imagedesc"];?>
             </p>
             <div class="newup-readm">
               <a
-                href="/News-Updates/pages/autonomous.html"
+                href="/NewsUpdate/images/<?php echo $r["imagename"];?>"
                 class="newup-readm-btn"
                 >Read More</a
               >
             </div>
           </div>
-          <div class="newup-card">
-            <div class="newup-image-2">
-              <img
-                src="News-Updates/img/2024/autonomous.png "
-                alt="Annoucement"
-                class="newupimg2"
-              />
-            </div>
-
-            <h3 class="newuptitle">
-              CHED Retains Autonomous Status for University of Perpetual Help
-              System - Laguna and UPH - Dr. Jose G. Tamayo Medical University
-            </h3>
-            <p class="newup-contents">
-              The Commission on Higher Education (CHED) has reaffirmed the
-              Autonomous status of the University of Perpetual Help System
-              Laguna (UPHSL) and UPH- Dr. Jose G. Tamayo Medical University with
-              validity period of three (3) years from September 16, 2024 to
-              September 15, 2027
-            </p>
-            <div class="newup-readm">
-              <a
-                href="/News-Updates/pages/autonomous.html"
-                class="newup-readm-btn"
-                >Read More</a
-              >
-            </div>
-          </div>
-
+    <?php } ?>      
+<!-- done insertion -->          
+         
+          
+          
           <div class="newup-card">
             <div class="newup-image-2">
               <img
@@ -445,7 +430,34 @@
           <div class="newup-card">
             <div class="newup-image-2">
               <img
-                src="News-Updates/img/2023/University of Perpetual Help System Laguna Earns Prestigious 3 QS Stars from Quacquarelli Symonds Intelligent Unit.png"
+                src="News-Updates/img/2024/Collaborative Hands.png"
+                alt="Annoucement"
+                class="newupimg2"
+              />
+            </div>
+
+            <h3 class="newuptitle">
+              UPHSL Extends Collaborative Hands to Partner Schools
+            </h3>
+            <p class="newup-contents">
+              The University of Perpetual Help System Laguna (UPHSL) has
+              extended a remarkable offer of collaboration, signing Memorandums
+              of Understanding (MOUs) with three distinguished educational
+              institutions
+            </p>
+            <div class="newup-readm">
+              <a
+                href="/News-Updates/pdf/UPHSL Extends Collaborative Hands to Partner Schools.pdf"
+                class="newup-readm-btn"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="newup-card">
+            <div class="newup-image-2">
+              <img
+                src="News-Updates/img/2024/QSTar.png"
                 alt="Annoucement"
                 class="newupimg2"
               />
@@ -473,16 +485,13 @@
           <div class="newup-card">
             <div class="newup-image-2">
               <img
-                src="News-Updates/img/2024/AUN-QA.png"
+                src="News-Updates/img/2024/Embarks Internationalization.png"
                 alt="Annoucement"
                 class="newupimg2"
               />
             </div>
 
-            <h3 class="newuptitle">
-              UPHSL Accepted as Associate Member of ASEAN University
-              Network&nbsp;&ndash;&nbsp;Quality Assurance
-            </h3>
+            <h3 class="newuptitle">Embarks on Internationalization Efforts</h3>
             <p class="newup-contents">
               The University of Perpetual Help System Laguna (UPHSL) has taken a
               significant stride towards internationalization as its official
@@ -490,7 +499,9 @@
               Nutrition, Health, and Lifestyle Conference 2023
             </p>
             <div class="newup-readm">
-              <a href="/News-Updates/pages/aun-qa.html" class="newup-readm-btn"
+              <a
+                href="/News-Updates/pdf/Embarks on Internationalization Efforts at the 5th NUTRICON 2023 in Kuala Lumpur.pdf"
+                class="newup-readm-btn"
                 >Read More</a
               >
             </div>
@@ -499,24 +510,48 @@
           <div class="newup-card">
             <div class="newup-image-2">
               <img
-                src="News-Updates/img/2023/Collaborative Hands.png"
+                src="News-Updates/img/2024/Dazzling Triumph.png"
                 alt="Annoucement"
                 class="newupimg2"
               />
             </div>
 
             <h3 class="newuptitle">
-              UPHSL Extends Collaborative Hands to Partner Schools
+              A Dazzling Triumph at the CHED ASEAN Kick-Off Celebration
             </h3>
             <p class="newup-contents">
-              The University of Perpetual Help System Laguna (UPHSL) has
-              extended a remarkable offer of collaboration, signing Memorandums
-              of Understanding (MOUs) with three distinguished educational
-              institutions
+              Amidst a symphony of unity and cultural camaraderie, the
+              University of Perpetual Help System Laguna (UPHSL) achieved an
+              extraordinary feat in the recent CHED ASEAN Kick Off Celebration
+              hosted at LPU Batangas
             </p>
             <div class="newup-readm">
               <a
-                href="/News-Updates/pdf/UPHSL Extends Collaborative Hands to Partner Schools.pdf"
+                href="/News-Updates/pdf/A Dazzling Triumph at the CHED ASEAN Kick-Off Celebration.pdf"
+                class="newup-readm-btn"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="newup-card">
+            <div class="newup-image-2">
+              <img
+                src="News-Updates/Pathway.jpg"
+                alt="Annoucement"
+                class="newupimg2"
+              />
+            </div>
+
+            <h3 class="newuptitle">Shengwei Education Collaboration</h3>
+            <p class="newup-contents">
+              Shengwei Education Consulting Services Corporation has been
+              authorized by UPHSL as an exclusive partner to recruit students
+              for International Transfer Pathway Program
+            </p>
+            <div class="newup-readm">
+              <a
+                href="/News-Updates/pages/shengwei.html"
                 class="newup-readm-btn"
                 >Read More</a
               >
@@ -538,10 +573,10 @@
               <div class="camp-pic-container">
                 <a href="https://uphsl.edu.ph">
                   <img
-                    src="img/campuses/binan-college.jpeg"
-                    alt="Binan Campus"
-                    class="camp-pic"
-                  />
+                  src="img/campuses/binan-college.jpeg"
+                  alt="Binan Campus"
+                  class="camp-pic"
+                />
                 </a>
               </div>
 
@@ -573,10 +608,10 @@
               <div class="camp-pic-container">
                 <a href="https://manila.uphsl.edu.ph/">
                   <img
-                    src="img/campuses/sampaloc-college.jpeg"
-                    alt="Manila Campus"
-                    class="camp-pic"
-                  />
+                  src="img/campuses/sampaloc-college.jpeg"
+                  alt="Manila Campus"
+                  class="camp-pic"
+                />
                 </a>
               </div>
 
@@ -592,11 +627,12 @@
               <div class="camp-pic-container">
                 <a href="https://pangasinan.uphsl.edu.ph/">
                   <img
-                    src="img/campuses/uphs-pangasinan.jpg"
-                    alt="Pangasinan Campus"
-                    class="camp-pic"
-                  />
+                  src="img/campuses/uphs-pangasinan.jpg"
+                  alt="Pangasinan Campus"
+                  class="camp-pic"
+                />
                 </a>
+
               </div>
 
               <h2 class="camp-title">Pangasinan</h2>
@@ -610,11 +646,12 @@
               <div class="camp-pic-container">
                 <a href="https://isabela.uphsl.edu.ph/">
                   <img
-                    src="img/campuses/Cauayan-college.jpg"
-                    alt="Cauayan Campus"
-                    class="camp-pic"
-                  />
+                  src="img/campuses/Cauayan-college.jpg"
+                  alt="Cauayan Campus"
+                  class="camp-pic"
+                />
                 </a>
+               
               </div>
 
               <h2 class="camp-title">Isabela</h2>
@@ -627,11 +664,12 @@
               <div class="camp-pic-container">
                 <a href="https://pueblodepanay.uphsl.edu.ph/">
                   <img
-                    src="img/campuses/pueblo-college.jpg"
-                    alt="Roxas Campus"
-                    class="camp-pic"
-                  />
+                  src="img/campuses/pueblo-college.jpg"
+                  alt="Roxas Campus"
+                  class="camp-pic"
+                />
                 </a>
+              
               </div>
 
               <h2 class="camp-title">Roxas</h2>
@@ -687,14 +725,6 @@
                   ></i
                 ></a>
               </li>
-
-              <li class="icons">
-                <a
-                  href="https://sith.unionbankph.com/UPAY/Whitelabel/F0C8082E-6D5E-4EAC-63F8-7E833B45284E?s=sOAsVhY7S91sCKtTtUlCajgGv0%2FRwGoO4HPmfTUKAuGR1ieki%2FDvW0Xpt4gqYM5xrDoHcX%2BZ1lWDkNQ3lzY1SyRTfD4ZyN4i4pFVy9JPo%2FMhVpPR38gei8DjPVDJT9cKn3TV49cHoiLxAZTYBoaRQAswH6Ih"
-                  target="_blank"
-                  ><i class="fas fa-money-check" style="color: #d3c5c5"></i
-                ></a>
-              </li>
             </div>
           </ul>
         </div>
@@ -703,18 +733,6 @@
           <img class="footer-logo" src="img/LG6.png" alt="" />
 
           <div class="foot-copyright">
-            <div class="counter" style="text-align: center">
-              <script
-                type="text/javascript"
-                src="https://www.freevisitorcounters.com/auth.php?id=a53d747cd31554b0a19dc64f0f6bec520d6cd6de"
-              ></script>
-
-              <script
-                type="text/javascript"
-                src="https://www.freevisitorcounters.com/en/home/counter/1232367/t/3"
-              ></script>
-              <h4>Visitors</h4>
-            </div>
             <p class="footer-copyright">
               Copyright © 2023 University of Perpetual Help JONELTA - All Rights
               Reserved
@@ -724,9 +742,7 @@
       </footer>
       <!-- end of footer -->
     </main>
-
-    <script src="/script/navbar.js"></script>
-
-    <script src="/script/scrolltop.js"></script>
+    <script src="script/navbar.js"></script>
+    <script src="script/scrolltop.js"></script>
   </body>
 </html>

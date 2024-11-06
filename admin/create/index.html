@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css"
+      rel="stylesheet"
+    /> 
+  </head>
+
+  <body>
+    <!-- Include stylesheet -->
+
+    <!-- Create the editor container -->
+    <div id="editor"></div>
+
+    <button id="submit">Submit</button>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill-image-resize-module-v2@3.0.0/image-resize.min.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script defer>
+      const quill = new Quill("#editor", {
+        theme: "snow",
+        modules: {
+          imageResize: {
+            displaySize: true,
+          },
+          toolbar: [
+            [
+              {
+                header: [1, 2, false],
+              },
+            ],
+            ["bold", "italic", "underline"],
+            ["image", "code-block"],
+          ],
+        },
+      });
+
+      document.querySelector("#submit").addEventListener("click", (e) => {
+        console.log(quill.getSemanticHTML());
+      });
+    </script>
+  </body>
+</html>
