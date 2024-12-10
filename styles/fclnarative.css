@@ -1,0 +1,81 @@
+:root {
+  --default-back: #1c4da1;
+  --default-2: #143980;
+  --default-3: #527bbd;
+  --default-4: #c4daf1;
+  --default-5: #e0b03c;
+  --default-6: #ffc63e;
+  --default-7: #ffe18b;
+  --default-8: #f9eed3;
+}
+
+.main-title {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.1em;
+  color: var(--default-back);
+}
+
+.img {
+  display: grid;
+  justify-content: center;
+  padding: 10px 0px 20px 0px;
+}
+.pages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.pages > p {
+  max-width: 1000px;
+  text-align: justify;
+}
+.pages > img {
+  padding: 10px 0px 20px 0px;
+}
+.short-title {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.short-pages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.short-pages > p {
+  padding: 10px 0px 10px 0px;
+  max-width: 1000px;
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+@media (max-width: 720px) {
+  .main-title {
+    font-size: 1.6em;
+  }
+  .img > img {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+  }
+  .pages > img {
+    width: 400px;
+  }
+  .pages > p {
+    max-width: 400px;
+  }
+  .short-title{
+    font-size: 1em;
+  }
+  .short-pages > img{
+    width: 400px;
+  }
+  .short-pages > p{
+    max-width: 400px;
+    font-size: 1em;
+  }
+}
