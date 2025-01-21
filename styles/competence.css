@@ -1,0 +1,43 @@
+.Competence {
+  width: 100%;
+}
+.main-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.competence-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #1c4da1;
+}
+.images {
+  width: 600px;
+  margin: 5px 10px 15px 20px;
+}
+.content > p {
+    font-size: 18px;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+.drlist > li {
+  margin-left: 10px;
+  padding: 5px;
+  list-style: none;
+  text-align: justify;
+}
+
+@media (width < 720px) {
+    .competence-title{
+        font-size: 20px;
+    }
+  .main-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    width: 400px;
+  }
+}
