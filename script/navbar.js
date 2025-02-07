@@ -27,7 +27,6 @@ document.querySelectorAll(".nav-link").forEach((n) => {
 
 
 //SubMenus
-console.log("start of submenu");
 
 let focusedMenu;
 let mediaWidth = window.matchMedia("(max-width: 1365px)");
