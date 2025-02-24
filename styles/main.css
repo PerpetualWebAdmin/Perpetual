@@ -224,8 +224,8 @@ input[type="checkbox"]:checked ~ .arrow {
   background-color: var(--default-6);
   bottom: 20px;
   right: 10px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: none;
   place-items: center;
   border-radius: 50%;
@@ -246,6 +246,9 @@ input[type="checkbox"]:checked ~ .arrow {
 /* End of Scroll to Top */
 
 
+/* Start of Chatbot Icon */
+
+/* End of Chatbot Icon */
 
 /*Start of News and Updates Section*/
 .Newups {
