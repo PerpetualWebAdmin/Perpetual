@@ -206,14 +206,20 @@ img {
 .card-header-wrapper {
     padding: 30px 0 20px 0;
 }
-.card-header-wrapper li{
+.card-header-wrapper  li{
     text-align: justify;
+    list-style: none;
 }
 .card-header-wrapper > h2{
     font-size: 20px;
     font-weight: 700;
     font-family: 'Arial Regular', 'Arial', sans-serif;
     padding-bottom: 2rem;
+}
+
+.paths > li{
+    padding-bottom: 10px;
+    list-style: none;
 }
 
 .ccs-bsit-studout > p {
