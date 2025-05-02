@@ -20,12 +20,12 @@ html {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /*Start of Navigation Bar*/
 .perpslogo {
-  width: 75%;
+  width: 15%;
 }
 .navbar {
   display: flex;
@@ -44,7 +44,6 @@ body {
   display: inline-block;
   padding: 10px;
 }
-
 .navbar input[type="checkbox"] {
   display: none;
 }
